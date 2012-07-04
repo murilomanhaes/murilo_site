@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Murilo Manhães - Soluções em Informática</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="tudo">
+
+		<div id="cabecalho">
+		  <div id="logo">   </div>
+
+			<div id="menu">
+				<ul>
+				<li><a href="#" class="main">Inicial</a></li>
+				<li><a href="#" class="sub">Quem Somos</a></li>
+				<li><a href="#" class="sub">Computadores</a></li>
+				<li><a href="#" class="home">Sites</a></li>
+				<li><a href="#" class="con">Contato</a></li>
+				</ul>
+			</div>
+
+			<div id="menu2">
+				<ul class="link">
+					<li><a href="#">Serviços</a></li>
+					<li class="sup"><a href="#">Suporte</a></li>
+					<li class="sol"><a href="#">Soluções</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+<%= yield %>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+/*Configuração para o site rodar me qualquer navegador*/
+
+*
+{
+padding:0px;
+margin:0px;
+list-style: none;
+text-decoration:none;
+}
+
+
+
+/*Configurações gerais para todas as paginas*/
+
+body{
+	background:url("/assets/bg.gif") repeat-x #FFF9F2;
+	color:#333227;
+	padding:0;
+	margin:0;
+}
+
+img{
+	border: none;
+}
+
+img a{
+	border:none;
+}
+
+a{
+	border: none;
+}
+
+
+
+
+
+/*Configurações para estrutura do site*/
+
+#tudo{
+	width:778px;
+	margin:0 auto 0 auto;
+}
+
+
+
+
+/*Configuração para o cabecalho*/
+
+#cabecalho{
+	width:778px;
+	height: 235px;
+}
+
+#logo{
+	float: left;
+	width: 188px;
+	height: 237px;
+	background: url("/assets/logo_bg.gif");
+}
+
+
+
+
+/*Configuração para o menu topo*/
+
+#menu ul{
+	float: left;
+	width:550px;
+	display:block;
+	height:29px;
+	margin-left: 20px;
+	font-size:0;
+}
+
+#menu ul li{
+	float:left;
+	height:29px;
+}
+
+#menu ul li a{
+	font:12px/29px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	height:29px;
+	display:block;
+	color:#FFF9F2;
+	background:url("/assets/navi_bg.gif") repeat-x 0 0 #005050;
+	text-decoration:none;
+	text-align:center;
+}
+
+#menu ul li a.main{
+	background:url("/assets/home.gif") no-repeat 0 0;
+	width:59px;
+}
+
+#menu ul li a.main:hover{
+	background:url("/assets/home_h.gif") no-repeat 0 0;
+	width:59px;
+}
+
+#menu ul li a.home{
+	background:url("/assets/about_us.gif") no-repeat 0 0;
+	width:74px;
+}
+
+#menu ul li a.home:hover{
+	background:url("/assets/about_us_h.gif") no-repeat 0 0;
+	width:74px;
+}
+
+#menu ul li a.sub{
+	background:url("/assets/submission.gif") no-repeat 0 0;
+	width:92px;
+}
+
+#menu ul li a.sub:hover{
+	background:url("/assets/submission_h.gif") no-repeat 0 0;
+	width:92px;
+}
+
+#menu ul li a.con{
+	background:url("/assets/contact_us.gif") no-repeat 0 0;
+	width:74px;
+}
+
+#menu ul li a.con:hover{
+	background:url("/assets/contact_us_h.gif") no-repeat 0 0;
+	width:74px;
+}
+
+
+
+
+
+/*Configuração para o menu2*/
+
+#menu2{
+	width:590px;
+	height: 210px;
+	float:left;
+	margin: 0;
+	background:url("/assets/header_pic.jpg") no-repeat;
+}
+
+
+#menu2 ul.link{
+	width:590px;
+	display:block;
+	margin:23px 0 0 0;
+	height:20px;
+}
+
+#menu2 ul.link li{
+	float:left;
+	width:102px;
+	font-size:0px;
+	display:block;
+	padding:0 0 0 96px;
+	height:20px;
+}
+
+#menu2 ul.link li.sup{
+	float:left;
+	width:96px;
+	font-size:0px;
+	display:block;
+	padding:0 0 0 102px;
+	height:20px;
+	margin:0;
+}
+
+#menu2 ul.link li.sol{
+	float:left;
+	width:122px;
+	display:block;
+	padding:0 0 0 55px;
+	height:20px;
+}
+
+#menu2 ul.link li a{
+	font:20px/20px Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#AA855B ;
+	font-weight:normal;
+	background-color:#FFF9F2;
+	background-image:none;
+	display:block;
+	width:104px;
+	text-align:right;
+	height:20px;
+}
+
+#menu2 ul.link li a:hover{
+	color:#5A3000;
+	background-color:#FFF9F2;
+	padding:0;
+	margin:0;
+}

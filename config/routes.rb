@@ -6,5 +6,7 @@ MuriloSite::Application.routes.draw do
   resources :somos 
   resources :computadores
   resources :sites
-    
+  resources :solucoes
+  resources :servicos
+      
 end

@@ -383,7 +383,7 @@ a{
 	float: left;
 	width: 280px;
 	height: 120px;
-	margin-left: 25%;
+	margin-left: 27%;
 }
 	
 
@@ -516,4 +516,48 @@ a{
 	display:block;
 	background-color:#FFF9F2;
 }
+
+
+
+
+
+/*Configurações para a aba solucoes*/
+
+.conteiner {
+	width: 250px;
+	min-height: 200px;
+	float: left;
+	margin-left: 30px;
+	margin-bottom: 25px;
+	border-bottom:#C9B884 1px dashed;
+
+}
+
+.conteiner img{
+	width: 226px;
+	height: 200px;
+	margin-bottom: 10px;
+	margin-left: 12px;
+}
+
+.conteiner p {
+	font:13px/14px Arial, Helvetica, sans-serif; 
+	color:#4D371E; 
+	margin:15px 5px 20px 20px; 
+	padding:0; 
+	display:block;
+	background-image:none;	
+	background-color:#FFF9F2; 
+	text-align:left; 
+	font-weight:normal; 
+}
+
+.linhaesquerda {
+  float: left;
+  height: 300px; 
+  margin-left: 30px;
+  border-right:#C9B884 1px dashed;
+}
+  
+
 

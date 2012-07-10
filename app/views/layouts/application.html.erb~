@@ -24,7 +24,7 @@
 				  <li><%= link_to "Inicial",root_path , :class=> "inicio" %></li>
 				  <li><%= link_to "Quem Somos",somos_path , :class=> "somos" %></li>
 				  <li><%= link_to "Computadores", computadores_path, :class => "computadores" %></li>
-				  <li><a href="#" class="sites">Sites</a></li>
+				  <li><%= link_to "Sites", sites_path, :class => "sites" %></li>
 				  <li><a href="#" class="contato">Contato</a></li>
 				
           <% if usuario_signed_in? %>
@@ -42,9 +42,9 @@
 
 			<div id="menu2">
 				<ul class="link">
-					<li><a href="#">Serviços</a></li>
+					<li><%= link_to "Serviços", servicos_path %></li>
 					<li class="suporte"><a href="#">Suporte</a></li>
-					<li class="solucoes"><a href="#">Soluções</a></li>
+					<li class="solucoes"><%= link_to "Soluções",solucoes_path %></li>
 				</ul>
 			</div>
 

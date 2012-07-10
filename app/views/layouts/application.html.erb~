@@ -5,36 +5,97 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link rel="shortcut icon" href="/assets/favicon.ico" >
 </head>
 <body>
 
 <div id="tudo">
-
-		<div id="cabecalho">
+       		
+  		<div id="cabecalho">
+		
 		  <div id="logo">   </div>
 
-			<div id="menu">
+  		<div id="menu">
 				<ul>
-				<li><a href="#" class="main">Inicial</a></li>
-				<li><a href="#" class="sub">Quem Somos</a></li>
-				<li><a href="#" class="sub">Computadores</a></li>
-				<li><a href="#" class="home">Sites</a></li>
-				<li><a href="#" class="con">Contato</a></li>
+				  <% if usuario_signed_in? %>
+				    <li><a><p class="ola">Olá</p> <p class="usuarionome"><%= current_usuario.nome %></p></a></li>
+				  <% end %>
+       
+				  <li><%= link_to "Inicial",root_path , :class=> "inicio" %></li>
+				  <li><%= link_to "Quem Somos",somos_path , :class=> "somos" %></li>
+				  <li><%= link_to "Computadores", computadores_path, :class => "computadores" %></li>
+				  <li><a href="#" class="sites">Sites</a></li>
+				  <li><a href="#" class="contato">Contato</a></li>
+				
+          <% if usuario_signed_in? %>
+          
+            <li><%= link_to 'Sair', destroy_usuario_session_path, method: :delete, :class => "sair"  %></li>
+          
+          <% else %>
+          
+            <li><%= link_to "Cadastra-se", new_registration_path(resource_name), :class => "cadastrar" %></li>
+				  
+				  <% end %>
+				  
 				</ul>
 			</div>
 
 			<div id="menu2">
 				<ul class="link">
 					<li><a href="#">Serviços</a></li>
-					<li class="sup"><a href="#">Suporte</a></li>
-					<li class="sol"><a href="#">Soluções</a></li>
+					<li class="suporte"><a href="#">Suporte</a></li>
+					<li class="solucoes"><a href="#">Soluções</a></li>
 				</ul>
 			</div>
 
 		</div>
+		
+		<div id="conteudo">
+		
+		      <% if notice %>
+             <div id='notice'>
+                <h1>Aviso</h1>
+                <p><%= notice %></p>
+             </div>
+          <% end %>
 
-<%= yield %>
+          <% if alert %>
+             <div id='alert'>
+               <h1>Erro</h1>
+               <p><%= alert %></p>
+             </div>
+          <% end %>
+          
+                   
+
+      <%= yield %>
+      
+    </div>
+
 
 </div>
+
+    <div id="rodape">
+			    <ul>
+			      <li><%= link_to "Inicial",root_path%>|</li>
+			      <li><%= link_to "Quem Somos",somos_path %>|</li>
+			      <li><%= link_to "Computadores",computadores_path %>|</li>
+			      <li><a href="#">Sites </a>|</li>
+			      <li><a href="#">Contato</a></li>
+			      <% if usuario_signed_in? %>
+          
+              <li>|<%= link_to 'Sair', destroy_usuario_session_path, method: :delete %></li>
+          
+            <% else %>
+          
+              <li>|<%= link_to "Cadastra-se", new_registration_path(resource_name) %></li>
+				  
+				    <% end %>
+			    
+			    </ul>
+			    
+			    <p>&copy; Murilo Manhães. Todos os direitos reservados.</p>
+			
+    </div>
 </body>
 </html>

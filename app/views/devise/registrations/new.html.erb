@@ -1,0 +1,47 @@
+<div id="formulario">
+
+<h2>Cadastrar Usuário</h2>
+
+<%= semantic_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+<br>
+
+    <fieldset class="dados_fieldset">
+    <br>
+      <legend> Dados Pessoais</legend>
+        <%= f.input :nome %>
+        <%= f.input :sobrenome %>
+        <%= f.input :sexo, as: :select, collection: ["Masculino", "Feminino"]%>
+        <%= f.input :data_nascimento, label: "Data Nasc."%>
+        <%= f.input :telefone %>
+    </fieldset>
+
+    <br><br>
+    
+    <fieldset class="dados_fieldset">
+    <br>
+      <legend> Dados Endereço</legend>
+        <%= f.input :endereco %>
+        <%= f.input :complemento %>
+        <%= f.input :bairro %>
+        <%= f.input :cidade %>
+        <%= f.input :estado, as: :select, collection: ["Acre", "Alagoas", "Amazonas", "Amapá", "Bahia", "Ceará", "Distrito Federal", "Espírito Santo", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro", "Rio Grande do Norte", "Rondônia", "Rio Grande do Sul", "Roraima", "Santa Catarina", "Sergipe", "São Paulo", "Tocantins"] %>
+        <%= f.input :cep, label: "CEP"%>
+        
+    </fieldset>
+    
+    <br><br>
+    
+    <fieldset class="dados_fieldset">
+    <br>
+      <legend> Dados Autenticação</legend>
+        <%= f.input :email, label: 'E-mail' %>
+        <%= f.input :password, label: 'Senha' %>
+        <%= f.input :password_confirmation, label: 'Senha Conf.' %>
+    </fieldset>
+
+    <br><br>
+
+ <div><%= f.submit "Salvar" %></div>
+<% end %>
+
+</div>

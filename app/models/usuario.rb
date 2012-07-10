@@ -1,0 +1,18 @@
+class Usuario < ActiveRecord::Base
+  # Include default devise modules. Others available are:
+  # :token_authenticatable, :rememberable,
+  #  and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :trackable, :validatable, :lockable, 
+         :timeoutable
+
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :nome, :sobrenome, :sexo, :data_nascimento, :telefone, :endereco,
+   :complemento, :bairro, :cidade, :estado, :cep, :email, :password, 
+   :password_confirmation
+   
+   validates :nome, :sobrenome, :sexo, :data_nascimento, :telefone, :endereco,
+   :bairro, :cidade, :estado, :password_confirmation, presence: true
+   validates :email, format:/^.+\@.+\..+$/
+   validates :email, uniqueness:true
+end

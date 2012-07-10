@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class SomosController < ApplicationController
   
   before_filter :authenticate_usuario!
   

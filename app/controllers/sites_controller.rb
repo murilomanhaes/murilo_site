@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class SitesController < ApplicationController
   
   before_filter :authenticate_usuario!
   

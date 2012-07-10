@@ -9,6 +9,74 @@ text-decoration:none;
 }
 
 
+/*Configurações para as mensagens*/
+
+#notice {
+  float: left;
+  min-width: 100px;
+  height: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid gray;
+}
+
+#notice h1 {
+  float: left;
+  width: 45px;
+  margin: 1px;
+  text-align: center;
+  font-size: 15px;
+  background-color: green;
+  color: white;
+}
+
+#notice p{
+  float: left;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#alert {
+  float: left;
+  min-width: 100px;
+  height: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid gray;
+}
+
+#alert h1 {
+  float: left;
+  width: 40px;
+  margin: 1px;
+  text-align: center;
+  font-size: 15px;
+  background-color: red;
+  color: white;
+}
+
+#alert p{
+  float: left;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+/*Configurações para o login*/
+
+#login{
+  float: left;
+  width: 400px;
+  height: 200px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 25%;
+  background-color: red;
+}
 
 /*Configurações gerais para todas as paginas*/
 
@@ -89,46 +157,92 @@ a{
 	text-align:center;
 }
 
-#menu ul li a.main{
+#menu ul li a.inicio{
 	background:url("/assets/home.gif") no-repeat 0 0;
 	width:59px;
 }
 
-#menu ul li a.main:hover{
+#menu ul li a.inicio:hover{
 	background:url("/assets/home_h.gif") no-repeat 0 0;
 	width:59px;
 }
 
-#menu ul li a.home{
-	background:url("/assets/about_us.gif") no-repeat 0 0;
-	width:74px;
-}
-
-#menu ul li a.home:hover{
-	background:url("/assets/about_us_h.gif") no-repeat 0 0;
-	width:74px;
-}
-
-#menu ul li a.sub{
+#menu ul li a.somos{
 	background:url("/assets/submission.gif") no-repeat 0 0;
 	width:92px;
 }
 
-#menu ul li a.sub:hover{
+#menu ul li a.somos:hover{
 	background:url("/assets/submission_h.gif") no-repeat 0 0;
 	width:92px;
 }
 
-#menu ul li a.con{
+#menu ul li a.computadores{
+	background:url("/assets/submission.gif") no-repeat 0 0;
+	width:92px;
+}
+
+#menu ul li a.computadores:hover{
+	background:url("/assets/submission_h.gif") no-repeat 0 0;
+	width:92px;
+}
+
+#menu ul li a.sites{
+	background:url("/assets/about_us.gif") no-repeat 0 0;
+	width:74px;
+}
+
+#menu ul li a.sites:hover{
+	background:url("/assets/about_us_h.gif") no-repeat 0 0;
+	width:74px;
+}
+
+#menu ul li a.contato{
+	background:url("/assets/about_us.gif") no-repeat 0 0;
+	width:74px;
+}
+
+#menu ul li a.contato:hover{
+	background:url("/assets/about_us_h.gif") no-repeat 0 0;
+	width:74px;
+}
+#menu ul li a.cadastrar{
 	background:url("/assets/contact_us.gif") no-repeat 0 0;
-	width:74px;
+	width:84px;
 }
 
-#menu ul li a.con:hover{
+#menu ul li a.cadastrar:hover{
 	background:url("/assets/contact_us_h.gif") no-repeat 0 0;
-	width:74px;
+	width:84px;
 }
 
+#menu ul li a.sair{
+	background:url("/assets/contact_us.gif") no-repeat 0 0;
+	width:64px;
+}
+
+#menu ul li a.sair:hover{
+	background:url("/assets/contact_us_h.gif") no-repeat 0 0;
+	width:64px;
+}
+
+
+/*Configurações para a aba de usuariologado*/
+
+
+#menu .ola{
+  float: left;
+  margin-left: -320px;
+  margin-top: 0px;
+  color: white;
+}
+
+#menu .usuarionome{
+  float: left;
+  margin-left: -297px;
+  margin-top: 0px;
+  color: #FFDEAD;
+}
 
 
 
@@ -160,7 +274,7 @@ a{
 	height:20px;
 }
 
-#menu2 ul.link li.sup{
+#menu2 ul.link li.suporte{
 	float:left;
 	width:96px;
 	font-size:0px;
@@ -170,11 +284,11 @@ a{
 	margin:0;
 }
 
-#menu2 ul.link li.sol{
+#menu2 ul.link li.solucoes{
 	float:left;
 	width:122px;
 	display:block;
-	padding:0 0 0 55px;
+	padding:0 0 0 72px;
 	height:20px;
 }
 
@@ -197,3 +311,209 @@ a{
 	padding:0;
 	margin:0;
 }
+
+
+
+
+
+/*Configurações para o conteudo*/
+
+#conteudo{
+	float: left;
+	width: 100%;
+	min-height: 300px;
+}
+
+
+#ladodireito{
+	width: 600px; 
+  margin-top: 40px;
+	margin-bottom: 20px;
+	margin-left: 10%;
+	float:left;
+}
+
+#ladodireito h2{ 
+	display:block; 
+	font:18px/18px Arial, Helvetica, sans-serif; 
+	color:#000000; 
+	text-transform:uppercase;
+	margin-top: 30px; 
+	padding:0px 0 0 0;
+	height:29px; 
+	background-color:#FFF9F2;
+}
+
+#ladodireito p{
+	font:14px/19px Arial, Helvetica, sans-serif; 
+	color:#4D371E; 
+	font-weight:normal; 
+	display:block;
+	margin:0 0 20px 10px; 
+	background-color:#FFF9F2;
+}
+
+#ladodireito p a{
+	width:32px; 
+	background:url(images/more_arrow.gif) no-repeat 0 0 #FFF9F2; 
+	color:#333227; 
+	margin:0 0 0 520px; 
+	height:16px;
+	font:12px/14px Arial, Helvetica, sans-serif; 
+	text-decoration:none; 
+	font-weight:bold; 
+	display:block; 
+	padding:0 0 0 23px
+}
+
+#ladodireito p a:hover{
+	color:#C01F0B; 
+	background:url(images/button_arrow.gif) no-repeat 0 0 #FFF9F2; 
+	width:32px;
+}
+
+.fotos{
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin-left: 35%;
+}
+
+.fotos2{
+	float: left;
+	width: 280px;
+	height: 120px;
+	margin-left: 25%;
+}
+	
+
+
+
+
+
+
+/*configurações para o rodape*/
+	
+#rodape{
+  background:url("/assets/rodape.gif") repeat-x; 
+	width:100%; 
+	float:left; 
+	height:153px;
+}
+
+#rodape ul{
+	width:47%; 
+	margin-left:28%; 
+	margin-top: 35px;
+	display:block; 
+	height:15px;
+}
+
+#rodape ul li{
+	float:left; 
+	font:12px/14px 'Trebuchet MS', Arial, Helvetica, sans-serif; 
+	color:#FFFFFF;
+	background-color:#6B6854;
+	display:block; 
+}
+
+#rodape ul li a{
+	font:12px/14px 'Trebuchet MS', Arial, Helvetica, sans-serif; 
+	color:#FFFFFF; 
+	background-color:#6B6854; 
+	text-decoration:none;
+	margin:0 10px 0 10px;
+}
+
+#rodape ul li a:hover{
+	text-decoration:underline;
+}
+
+#rodape p{
+	width:50%;
+	margin-top: 10px;
+	margin-left: 37%;
+	font:12px/14px 'Trebuchet MS', Arial, Helvetica, sans-serif; color:#F3F1DF;
+	background-color:#6B6854
+}
+
+
+
+
+
+/*Configurações para o formulário*/
+
+#formulario h2{ 
+	display:block; 
+	font:18px/18px Arial, Helvetica, sans-serif; 
+	color:#000000; 
+	text-transform:uppercase;
+	margin-top: 30px; 
+	padding:0px 0 0 0;
+	height:29px; 
+	background-color:#FFF9F2;
+}
+
+#formulario{
+  float: left;
+  width: 700px;
+  min-height: 300px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+#formulario li {
+  float: left;
+  width: 700px;
+  list-style-type:none;
+}
+
+.dados_fieldset legend{
+  font:14px/19px Arial, Helvetica, sans-serif; 
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.dados_fieldset label{
+  float: left;
+  margin-left: 20px;
+}
+
+
+.inline-errors{
+  margin-left: 52%;
+  margin-top: -21px;
+  color: #FF0000;
+  font:14px/19px Arial, Helvetica, sans-serif; 
+	font-weight:normal;
+}
+
+
+.formtastic abbr {
+  border:0;
+  font-variant:normal;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #FF0000;
+}
+
+.formtastic .input {
+  overflow:hidden; /* clear containing floats */
+  padding:0.5em 0; /* padding and negative margin juggling is for Firefox */
+  margin-top:-0.5em;
+  margin-bottom:1em;
+}
+
+.formtastic .input .label {
+  display:block;
+  width:14%;
+  float:left;
+  padding-top:.2em;
+  font:14px/19px Arial, Helvetica, sans-serif; 
+	color:#4D371E; 
+	font-weight:normal; 
+	display:block;
+	background-color:#FFF9F2;
+}
+

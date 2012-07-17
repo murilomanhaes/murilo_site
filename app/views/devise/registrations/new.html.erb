@@ -11,8 +11,8 @@
         <%= f.input :nome %>
         <%= f.input :sobrenome %>
         <%= f.input :sexo, as: :select, collection: ["Masculino", "Feminino"]%>
-        <%= f.input :data_nascimento, label: "Data Nasc."%>
-        <%= f.input :telefone %>
+        <%= f.input :data_nascimento, label: "Data Nasc.", input_html: opcoes_para_data%>
+        <%= f.input :telefone, input_html: opcoes_para_telefone%>
     </fieldset>
 
     <br><br>
@@ -25,7 +25,7 @@
         <%= f.input :bairro %>
         <%= f.input :cidade %>
         <%= f.input :estado, as: :select, collection: ["Acre", "Alagoas", "Amazonas", "Amapá", "Bahia", "Ceará", "Distrito Federal", "Espírito Santo", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro", "Rio Grande do Norte", "Rondônia", "Rio Grande do Sul", "Roraima", "Santa Catarina", "Sergipe", "São Paulo", "Tocantins"] %>
-        <%= f.input :cep, label: "CEP"%>
+        <%= f.input :cep, label: "CEP", input_html: opcoes_para_cep%>
         
     </fieldset>
     

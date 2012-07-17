@@ -1,23 +1,15 @@
-<p>
-  <b>Titulo:</b>
-  <%= @novidade.titulo %>
-</p>
-
-<p>
-  <b>Resumo:</b>
-  <%= @novidade.resumo %>
-</p>
-
-<p>
-  <b>Conteudo:</b>
-  <%= @novidade.conteudo %>
-</p>
-
-<p>
-  <b>Data:</b>
-  <%= @novidade.data %>
-</p>
+<div id="ladodireito">
+  <h2><%= @novidade.titulo %></h2> 
+  
+  <p class="datanovidade">
+    <%= @novidade.data.to_s_br %>
+  </p></br>
+ 
+  <p>
+    <%= @novidade.conteudo %>
+  </p>
 
 
-<%= link_to 'Edit', edit_novidade_path(@novidade) %> |
-<%= link_to 'Back', novidades_path %>
+
+</div>
+

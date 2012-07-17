@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def opcoes_para_observacao
-    { cols: '33', rows: '5'}
+    { cols: '35', rows: '5'}
   end
 
 end

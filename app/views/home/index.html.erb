@@ -1,1 +1,38 @@
-  
+<div id="ladodireito">
+
+  <h2>Murilo Manhães - Soluções em Informática</h2>
+	
+	<p>Somos especializada em assistência técnica de computadores, criação de sites, registro de domínio, etc. Estamos a 2 anos no mercado atendendo com dedicação 
+					e responsabilidade os nossos clientes. Trabalhamos com manutenção preventiva (Empresa ou/e Pessoal), serviço de 
+					instalação de sistema, configuramos a sua máquina, formatação, limpeza de sistemas, recuperação de dados (Fotos, 
+					músicas, etc.), melhorando o desempenho do seu computador.
+		
+	<%= link_to "mais",somos_path %>
+	
+	</p>
+	
+	
+	<br>
+	
+	<div id="parceiros">
+	  <h2>Sites Parceiros</h2>
+	
+	</div>
+	
+	<div id="noticias">
+	  <h2>Notícias</h2>
+
+    <% @novidades.each do |novidade| %>
+      <ul>
+			  <li><a><b><%= novidade.titulo %></b></a>
+          <a><%= novidade.resumo %></a>
+          <%= link_to "mais", novidade , :class => "more1"%>
+          
+        </li>
+      </ul>
+          
+          
+    <% end %>  
+  </div>
+
+</div>

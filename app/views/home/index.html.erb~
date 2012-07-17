@@ -1,29 +1,38 @@
-<h1>Listing novidades</h1>
+<div id="ladodireito">
 
-<table>
-  <tr>
-    <th>Titulo</th>
-    <th>Resumo</th>
-    <th>Conteudo</th>
-    <th>Data</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <h2>Murilo Manhães - Soluções em Informática</h2>
+	
+	<p>Somos especializada em assistência técnica de computadores, criação de sites, registro de domínio, etc. Estamos a 2 anos no mercado atendendo com dedicação 
+					e responsabilidade os nossos clientes. Trabalhamos com manutenção preventiva (Empresa ou/e Pessoal), serviço de 
+					instalação de sistema, configuramos a sua máquina, formatação, limpeza de sistemas, recuperação de dados (Fotos, 
+					músicas, etc.), melhorando o desempenho do seu computador.
+		
+	<%= link_to "mais",somos_path %>
+	
+	</p>
+	
+	
+	<br>
+	
+	<div id="parceiros">
+	  <h2>Sites Parceiros</h2>
+	
+	</div>
+	
+	<div id="noticias">
+	  <h2>Notícias</h2>
 
-<% @novidades.each do |novidade| %>
-  <tr>
-    <td><%= novidade.titulo %></td>
-    <td><%= novidade.resumo %></td>
-    <td><%= novidade.conteudo %></td>
-    <td><%= novidade.data %></td>
-    <td><%= link_to 'Show', novidade %></td>
-    <td><%= link_to 'Edit', edit_novidade_path(novidade) %></td>
-    <td><%= link_to 'Destroy', novidade, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+    <% @novidades.each do |novidade| %>
+      <ul>
+			  <li><a><b><%= novidade.titulo %></b></a></br>
+          <a><%= novidade.resumo %></a><br><br><br><br>
+          <%= link_to "mais", novidade , :class => "more1"%>
+          
+        </li>
+      </ul>
+          
+          
+    <% end %>  
+  </div>
 
-<br />
-
-<%= link_to 'New Novidade', new_novidade_path %>  
+</div>

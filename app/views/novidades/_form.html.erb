@@ -1,11 +1,16 @@
-<%= semantic_form_for(@novidade) do |f| %>
-    <%= f.input :titulo %>
-    
-    <%= f.input :resumo %>
-    
-    <%= f.input :conteudo %>
-    
-    <%= f.input :data, as: :string %>
-    
-    <%= f.submit 'Salvar' %>
-<% end %>
+<div id="formulario">
+  <%= semantic_form_for(@novidade) do |f| %>
+  
+      <%= f.input :titulo %>
+      
+      <%= f.input :resumo, input_html: opcoes_para_observacao %>
+      
+      <%= f.input :conteudo, input_html: opcoes_para_observacao %>
+      
+      <%= f.input :data, as: :string, input_html: opcoes_para_data %>
+      
+      
+      
+      <%= f.submit 'Salvar' %>
+  <% end %>
+ </div>

@@ -1,17 +1,16 @@
-<h2>Login</h2>
+<div id="login">
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
-
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
-
-  <div><%= f.submit "Entrar" %></div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+  <div id="loginconteudo">
+  
+    <%= semantic_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+      
+     <%= f.input :email, label: "E-mail" %>
+     <%= f.input :password, label: "Senha" %>
+     
+      <div><%= f.submit "Entrar" %></div>
+    <% end %>
+    <br />
+   <%= render "devise/shared/links" %>
+   
+   </div>
+</div>

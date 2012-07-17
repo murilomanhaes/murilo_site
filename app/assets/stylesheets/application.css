@@ -70,12 +70,20 @@ text-decoration:none;
 
 #login{
   float: left;
-  width: 400px;
-  height: 200px;
+  width: 445px;
+  height: 400px;
   margin-top: 60px;
   margin-bottom: 60px;
   margin-left: 25%;
-  background-color: red;
+  background:url("/assets/login.gif");
+}
+
+#loginconteudo{
+  float: left;
+  width: 400px;
+  height: 140px;
+  margin-top: 170px;
+  margin-left: 80px;
 }
 
 /*Configurações gerais para todas as paginas*/
@@ -350,7 +358,6 @@ a{
 	font-weight:normal; 
 	display:block;
 	margin:0 0 20px 10px; 
-	background-color:#FFF9F2;
 }
 
 #ladodireito p a{
@@ -514,7 +521,6 @@ a{
 	color:#4D371E; 
 	font-weight:normal; 
 	display:block;
-	background-color:#FFF9F2;
 }
 
 

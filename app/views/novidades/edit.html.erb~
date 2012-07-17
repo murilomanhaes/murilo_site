@@ -1,0 +1,6 @@
+<h1>Editar novidade</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Ver', @novidade %> |
+

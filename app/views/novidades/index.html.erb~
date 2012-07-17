@@ -17,13 +17,13 @@
     <td><%= novidade.resumo %></td>
     <td><%= novidade.conteudo %></td>
     <td><%= novidade.data %></td>
-    <td><%= link_to 'Show', novidade %></td>
-    <td><%= link_to 'Edit', edit_novidade_path(novidade) %></td>
-    <td><%= link_to 'Destroy', novidade, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Ver', novidade %></td>
+    <td><%= link_to 'Editar', edit_novidade_path(novidade) %></td>
+    <td><%= link_to 'Apagar', novidade, confirm: 'Deseja realmente apagar?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Novidade', new_novidade_path %>  
+<%= link_to 'Criar Novidade', new_novidade_path %>

@@ -33,7 +33,7 @@
           
           <% else %>
           
-            <li><%= link_to "Cadastra-se", new_registration_path(resource_name), :class => "cadastrar" %></li>
+            <li><%= link_to "Cadastra-se", new_usuario_registration_path, :class => "cadastrar" %></li>
 				  
 				  <% end %>
 				  
@@ -80,7 +80,7 @@
 			      <li><%= link_to "Inicial",root_path%>|</li>
 			      <li><%= link_to "Quem Somos",somos_path %>|</li>
 			      <li><%= link_to "Computadores",computadores_path %>|</li>
-			      <li><a href="#">Sites </a>|</li>
+			      <li><%= link_to "Sites", sites_path %>|</li>
 			      <li><a href="#">Contato</a></li>
 			      <% if usuario_signed_in? %>
           

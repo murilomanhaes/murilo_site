@@ -1,4 +1,6 @@
 MuriloSite::Application.routes.draw do
+  resources :novidades
+
   devise_for :usuarios
 
   root to: "home#index"

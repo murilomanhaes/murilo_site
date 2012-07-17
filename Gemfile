@@ -26,5 +26,4 @@ group :development, :test do
 end
 
 gem "brazilian-rails"
-gem "inherited_resources" #diminuir o codigo do controller
 gem "formtastic" #facilitar a criação do formulario

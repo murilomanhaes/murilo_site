@@ -1,0 +1,23 @@
+<p>
+  <b>Titulo:</b>
+  <%= @novidade.titulo %>
+</p>
+
+<p>
+  <b>Resumo:</b>
+  <%= @novidade.resumo %>
+</p>
+
+<p>
+  <b>Conteudo:</b>
+  <%= @novidade.conteudo %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= @novidade.data %>
+</p>
+
+
+<%= link_to 'Edit', edit_novidade_path(@novidade) %> |
+<%= link_to 'Back', novidades_path %>

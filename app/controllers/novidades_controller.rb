@@ -1,4 +1,7 @@
 class NovidadesController < ApplicationController
+
+    before_filter :authenticate_usuario!
+    
   # GET /novidades
   # GET /novidades.json
   def index

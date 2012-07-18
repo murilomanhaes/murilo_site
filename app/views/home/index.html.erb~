@@ -16,6 +16,14 @@
 	
 	<div id="parceiros">
 	  <h2>Sites Parceiros</h2>
+	  
+	  <% @parceiros.each do |parceiro| %>
+      <ul>
+			  <li><a><b><%= link_to parceiro.nome, parceiro.endereco, :target => "_blank"%></b></a></li>
+      </ul>
+          
+          
+    <% end %> 
 	
 	</div>
 	
@@ -24,8 +32,8 @@
 
     <% @novidades.each do |novidade| %>
       <ul>
-			  <li><a><b><%= novidade.titulo %></b></a></br>
-          <a><%= novidade.resumo %></a><br><br><br><br>
+			  <li><a><b><%= novidade.titulo %></b></a>
+          <a><%= novidade.resumo %></a>
           <%= link_to "mais", novidade , :class => "more1"%>
           
         </li>

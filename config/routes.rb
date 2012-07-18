@@ -1,4 +1,6 @@
 MuriloSite::Application.routes.draw do
+  resources :parceiros
+
   resources :novidades
 
   devise_for :usuarios

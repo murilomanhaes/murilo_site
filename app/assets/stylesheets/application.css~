@@ -505,7 +505,10 @@ a{
   margin-left: 30px;
   border: 1px solid black;
   text-align: center;
-  
+}
+
+.noticiasrelatorio td, tr, th{
+   border: 1px solid black;
 }
 
 
@@ -530,7 +533,7 @@ a{
 	color:#FFFFFF; 
 	font:17px Arial, Helvetica, sans-serif; 
 	font-weight: bold;
-	background:url(images/h2_bg.gif) no-repeat 11px 143px #006666; 
+	background:url("/assets/h2_bg.gif") no-repeat 11px 143px #006666; 
 	padding:10px 10px 5px 10px;
 	margin-top:0;
 	margin-right: 0;
@@ -552,49 +555,19 @@ a{
 	height:25px;
 	margin: 5px;
 }
-#parceiros ul li.noborder{
-	border-bottom:none; 
-	padding: 0px;
-	margin-bottom: 20px; 
-	display:block; 
-}
 
-#parceiros ul li a{
+
+#parceiros ul li a {
 	font:13px/14px Arial, Helvetica, sans-serif; 
 	color:#4D371E; 
-	margin-left: 15px;
+	margin-left: 5px;
 	background-image:none;	
 	background-color:#FFF9F2; 
-	text-align:left; 
-	font-weight:normal; 
+	text-align: center; 
+	font-weight:bold; 
 	height: 15px;
 	width:170px;
 }
-
-#parceiros a.more{
-	width:32px; 
-	background:url(images/more_arrow1.gif) no-repeat 0 0 #FFF9F2; 
-	color:#333227; 
-	margin:0 0 20px 0px; 
-	height:16px;
-	font:12px/14px Arial, Helvetica, sans-serif; 
-	text-decoration:none; 
-	font-weight:bold; 
-	display:block; 
-	padding:0 0 0 23px;
-	float:right;
-}
-
-#parceiros a.more:hover{
-	color:#C01F0B; 
-	background:url(images/more_arrow2.gif) no-repeat 0 0 #FFF9F2; 
-	width:32px;
-}
-	
-
-
-
-
 
 
 /*configurações para o rodape*/

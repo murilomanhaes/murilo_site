@@ -16,6 +16,14 @@
 	
 	<div id="parceiros">
 	  <h2>Sites Parceiros</h2>
+	  
+	  <% @parceiros.each do |parceiro| %>
+      <ul>
+			  <li><a><b><%= link_to parceiro.nome, parceiro.endereco, :target => "_blank"%></b></a></li>
+      </ul>
+          
+          
+    <% end %> 
 	
 	</div>
 	

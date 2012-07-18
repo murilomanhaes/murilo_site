@@ -1,8 +1,8 @@
 class HomeController < ApplicationController
   
-  before_filter :authenticate_usuario!
-  
+
   def index
-    @novidades = Novidade.all    
+    @novidades = Novidade.all 
+    @parceiros = Parceiro.all   
   end
 end

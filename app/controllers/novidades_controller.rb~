@@ -44,7 +44,7 @@ class NovidadesController < ApplicationController
 
     respond_to do |format|
       if @novidade.save
-        format.html { redirect_to @novidade, notice: 'Novidade was successfully created.' }
+        format.html { redirect_to @novidade, notice: 'Novidade cadastrada com sucesso' }
         format.json { render json: @novidade, status: :created, location: @novidade }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class NovidadesController < ApplicationController
 
     respond_to do |format|
       if @novidade.update_attributes(params[:novidade])
-        format.html { redirect_to @novidade, notice: 'Novidade was successfully updated.' }
+        format.html { redirect_to @novidade, notice: 'Novidade atualizada com sucesso.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

@@ -2,9 +2,9 @@
   <h2>Novidades</h2>
   <br>  
 
-  <table>
+  <table class="noticiasrelatorio">
     <tr>
-      <th>Titulo</th>
+      <th>Título</th>
       <th>Resumo</th>
       <th></th>
       <th></th>
@@ -14,14 +14,10 @@
     <tr>
       <td><%= novidade.titulo %></td>
       <td><%= novidade.resumo %></td>
-      <td><%= link_to 'Editar', edit_novidade_path(novidade) %></td>
-      <td><%= link_to 'Apagar', novidade, confirm: 'Deseja realmente apagar?', method: :delete %></td>
+      <td><%= link_to '', edit_novidade_path(novidade), :class=> "editar"%></td>
+      <td><%= link_to '', novidade, confirm: 'Deseja realmente apagar?', method: :delete, :class=>"deletar" %></td>
     </tr>
   <% end %>
   </table>
-
-  <br />
-
-  <%= link_to 'Criar Novidade', new_novidade_path %>
 
 </div>

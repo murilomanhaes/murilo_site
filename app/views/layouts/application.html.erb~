@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
   <title>Murilo Manhães - Soluções em Informática</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta charset="utf-8">
   <link rel="shortcut icon" href="/assets/favicon.ico" >
 </head>
 <body>
@@ -88,7 +89,7 @@
           
             <% else %>
           
-              <li>|<%= link_to "Cadastra-se", new_registration_path(resource_name) %></li>
+              <li>|<%= link_to "Cadastra-se", new_usuario_registration_path %></li>
 				  
 				    <% end %>
 			    

@@ -1,15 +1,8 @@
-<p id="notice"><%= notice %></p>
+<div id="ladodireito">
+  <h2><%= @parceiro.nome %></h2>  
+  <p>
+    <%= @parceiro.endereco %>
+  </p>
 
-<p>
-  <b>Nome:</b>
-  <%= @parceiro.nome %>
-</p>
+</div>
 
-<p>
-  <b>Endereco:</b>
-  <%= @parceiro.endereco %>
-</p>
-
-
-<%= link_to 'Edit', edit_parceiro_path(@parceiro) %> |
-<%= link_to 'Back', parceiros_path %>

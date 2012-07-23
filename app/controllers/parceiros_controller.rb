@@ -48,7 +48,7 @@ class ParceirosController < ApplicationController
 
     respond_to do |format|
       if @parceiro.save
-        format.html { redirect_to @parceiro, notice: 'Parceiro was successfully created.' }
+        format.html { redirect_to @parceiro, notice: 'Parceiro cadastrado com sucesso.' }
         format.json { render json: @parceiro, status: :created, location: @parceiro }
       else
         format.html { render action: "new" }
@@ -64,7 +64,7 @@ class ParceirosController < ApplicationController
 
     respond_to do |format|
       if @parceiro.update_attributes(params[:parceiro])
-        format.html { redirect_to @parceiro, notice: 'Parceiro was successfully updated.' }
+        format.html { redirect_to @parceiro, notice: 'Parceiro atualizado com sucesso.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

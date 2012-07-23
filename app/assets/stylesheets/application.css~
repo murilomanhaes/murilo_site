@@ -560,7 +560,7 @@ a{
 #parceiros ul li a {
 	font:13px/14px Arial, Helvetica, sans-serif; 
 	color:#4D371E; 
-	margin-left: 5px;
+	margin-left: 10px;
 	background-image:none;	
 	background-color:#FFF9F2; 
 	text-align: center; 

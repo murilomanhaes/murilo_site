@@ -1,4 +1,8 @@
 class ParceirosController < ApplicationController
+  
+    before_filter :authenticate_usuario!
+    
+    
   # GET /parceiros
   # GET /parceiros.json
   def index

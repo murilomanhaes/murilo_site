@@ -19,7 +19,7 @@
   		<div id="menu">
 				<ul>
 				  <% if usuario_signed_in? %>
-				    <li><a><p class="ola">Olá</p> <p class="usuarionome"><%= current_usuario.nome %></p></a></li>
+				    <li><a><p class="ola">Olá</p> <p class="usuarionome"><%= current_usuario.nome %> <%= current_usuario.tipo %></p></a></li>
 				  <% end %>
        
 				  <li><%= link_to "Inicial",root_path , :class=> "inicio" %></li>
@@ -27,7 +27,14 @@
 				  <li><%= link_to "Computadores", computadores_path, :class => "computadores" %></li>
 				  <li><%= link_to "Sites", sites_path, :class => "sites" %></li>
 				  <li><a href="#" class="contato">Contato</a></li>
-				
+				  
+				  <% if usuario_signed_in? %>
+				  
+				  <%else%>
+				    <li><%= link_to "Login", usuario_session_path, :class => "sites" %></li>
+				  
+				  <% end %>
+				  
           <% if usuario_signed_in? %>
           
             <li><%= link_to 'Sair', destroy_usuario_session_path, method: :delete, :class => "sair"  %></li>

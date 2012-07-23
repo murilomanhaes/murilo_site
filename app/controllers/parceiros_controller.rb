@@ -1,6 +1,7 @@
 class ParceirosController < ApplicationController
   
-    before_filter :authenticate_usuario!
+  load_and_authorize_resource
+  before_filter :authenticate_usuario!
     
     
   # GET /parceiros

@@ -1,7 +1,7 @@
 class ComputadoresController < ApplicationController
   
-    before_filter :authenticate_usuario!
-       
+  load_and_authorize_resource 
+      
   def index
 
   end

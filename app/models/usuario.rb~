@@ -9,10 +9,10 @@ class Usuario < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :nome, :sobrenome, :sexo, :data_nascimento, :telefone, :endereco,
    :complemento, :bairro, :cidade, :estado, :cep, :email, :password, 
-   :password_confirmation
+   :password_confirmation, :tipo
    
    validates :nome, :sobrenome, :sexo, :data_nascimento, :telefone, :endereco,
-    presence: true
+   :bairro, :cidade, :estado, :password_confirmation, presence: true
    validates :email, format:/^.+\@.+\..+$/
    validates :email, uniqueness:true
 end

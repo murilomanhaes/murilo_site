@@ -1,4 +1,9 @@
 <div id="ladodireito">
+  
+  <% if can? :manage, :all %>
+	  <li><a><%= link_to 'Parceiro', new_parceiro_path %></a></li>
+	  <li><a><%= link_to 'Notícia', new_novidade_path %></a></li>
+	<% else %>
 
   <h2>Murilo Manhães - Soluções em Informática</h2>
 	
@@ -41,6 +46,8 @@
           
           
     <% end %>  
+    
+  <%end%>
   </div>
 
 </div>

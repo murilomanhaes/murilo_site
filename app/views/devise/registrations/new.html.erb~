@@ -25,7 +25,7 @@
         <%= f.input :bairro %>
         <%= f.input :cidade %>
         <%= f.input :estado, as: :select, collection: ["Acre", "Alagoas", "Amazonas", "Amapá", "Bahia", "Ceará", "Distrito Federal", "Espírito Santo", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro", "Rio Grande do Norte", "Rondônia", "Rio Grande do Sul", "Roraima", "Santa Catarina", "Sergipe", "São Paulo", "Tocantins"] %>
-        <%= f.input :cep, label: "CEP", input_html: opcoes_para_CEP%>
+        <%= f.input :cep, label: "CEP", input_html: opcoes_para_cep%>
         
     </fieldset>
     
@@ -34,6 +34,7 @@
     <fieldset class="dados_fieldset">
     <br>
       <legend> Dados Autenticação</legend>
+        <%= f.input :tipo%>
         <%= f.input :email, label: 'E-mail' %>
         <%= f.input :password, label: 'Senha' %>
         <%= f.input :password_confirmation, label: 'Senha Conf.' %>

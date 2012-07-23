@@ -8,8 +8,12 @@
   <p>
     <%= @novidade.conteudo %>
   </p>
-
-
+  
+  <% if can? :manage, :all %>
+	  <li><a><%= link_to 'Voltar', new_novidade_path %></a></li>
+	<% else %>
+	  <li><a><%= link_to 'Voltar', root_path %></a></li>
+	<% end %>
 
 </div>
 

@@ -755,29 +755,78 @@ a{
 #menuadminitrador { 
   float: left;
   width: 100%;
-  height: 50px;
-  margin-top: 10px;
-  background-color: red;
+  height: 300px;
+  margin-top: 25px;
 }
 
 .menucadastrar {
   float: left;
-  width: 100px;
+  width: 170px;
   height: 100px;
+  margin-left: 15px;
   background: url("/assets/cadastrar.gif") no-repeat 0 0;
  }
  
  .menualterar {
   float: left;
-  width: 150px;
+  width: 170px;
   height: 100px;
-  background: url("/assets/cadastrar.gif") no-repeat 0 0;
+  margin-left: 30px;
+  background: url("/assets/alterar.gif") no-repeat 0 0;
  }
  
  .menuconsultar {
   float: left;
-  width: 100px;
+  width: 170px;
   height: 100px;
-  background: url("/assets/cadastrar.gif") no-repeat 0 0;
+  margin-left: 15px;
+  background: url("/assets/consultar.gif") no-repeat 0 0;
  }
 
+.menurelatorio {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-top: 40px;
+  margin-left: 220px;
+  background: url("/assets/relatorio.gif") no-repeat 0 0;
+ }
+ 
+ 
+ 
+ 
+ 
+ .cadastrarnoticia {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 15px;
+  background: url("/assets/cadnoticia.gif") no-repeat 0 0;
+ }
+ 
+ .cadastrarparceiro {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 15px;
+  background: url("/assets/cadparceiro.gif") no-repeat 0 0;
+ }
+ 
+ 
+ 
+ 
+ .alterarnoticia {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 15px;
+  background: url("/assets/cadnoticia.gif") no-repeat 0 0;
+ }
+ 
+ .alterarparceiro {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 15px;
+  background: url("/assets/cadparceiro.gif") no-repeat 0 0;
+ }

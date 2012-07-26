@@ -2,10 +2,10 @@
   
   <% if can? :manage, :all %>
    <div id="menuadminitrador">
-	  <%= link_to 'Alterar/Deletar', alterar_deletar_administracoes_path, :class => "menualterar" %>
-	  <%= link_to 'Cadastrar', administracoes_path, :class => "menucadastrar" %>
-		<%= link_to 'Consultar', administracoes_path, :class => "menuconsultar" %>
-		<%= link_to 'Relatorio', administracoes_path, :class => "menuconsultar" %>
+	  <%= link_to '', alterar_deletar_administracoes_path, :class => "menualterar" %>
+	  <%= link_to '', cadastrar_administracoes_path, :class => "menucadastrar" %>
+		<%= link_to '', administracoes_path, :class => "menuconsultar" %>
+		<%= link_to '', administracoes_path, :class => "menurelatorio" %>
 		
 	</div>
 	

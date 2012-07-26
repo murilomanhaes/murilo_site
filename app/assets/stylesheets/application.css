@@ -748,5 +748,35 @@ a{
   border-right:#C9B884 1px dashed;
 }
   
+  
+  
+/* Configurações para o administrador*/
 
+#menuadminitrador { 
+  float: left;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.menucadastrar {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: url("/assets/cadastrar.gif") no-repeat 0 0;
+ }
+ 
+ .menualterar {
+  float: left;
+  width: 150px;
+  height: 100px;
+  background: url("/assets/cadastrar.gif") no-repeat 0 0;
+ }
+ 
+ .menuconsultar {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: url("/assets/cadastrar.gif") no-repeat 0 0;
+ }
 

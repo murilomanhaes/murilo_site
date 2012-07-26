@@ -1,10 +1,8 @@
 class HomeController < ApplicationController
   
-  load_and_authorize_resource 
-  before_filter :authenticate_usuario!
-   
+    
   def index
-    @novidades = Novidade.all 
+    @novidades = Novidade.order('created_at').last(7) 
     @parceiros = Parceiro.all   
   end
 end

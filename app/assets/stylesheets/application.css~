@@ -597,7 +597,6 @@ a{
 	margin-top: 35px;
 	display:block; 
 	height:15px;
-	background-color: red;
 }
 
 #rodape ul li{
@@ -749,5 +748,36 @@ a{
   border-right:#C9B884 1px dashed;
 }
   
+  
+  
+/* Configurações para o administrador*/
 
+#menuadminitrador { 
+  float: left;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  background-color: red;
+}
+
+.menucadastrar {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: url("/assets/cadastrar.gif") no-repeat 0 0;
+ }
+ 
+ .menualterar {
+  float: left;
+  width: 150px;
+  height: 100px;
+  background: url("/assets/cadastrar.gif") no-repeat 0 0;
+ }
+ 
+ .menuconsultar {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: url("/assets/cadastrar.gif") no-repeat 0 0;
+ }
 

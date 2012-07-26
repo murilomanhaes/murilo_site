@@ -1,8 +1,14 @@
 <div id="ladodireito">
   
   <% if can? :manage, :all %>
-	  <li><a><%= link_to 'Parceiro', new_parceiro_path %></a></li>
-	  <li><a><%= link_to 'Notícia', new_novidade_path %></a></li>
+   <div id="menuadminitrador">
+	  <%= link_to 'Alterar/Deletar', alterar_deletar_administracoes_path, :class => "menualterar" %>
+	  <%= link_to 'Cadastrar', cadastrar_administracoes_path, :class => "menucadastrar" %>
+		<%= link_to 'Consultar', administracoes_path, :class => "menuconsultar" %>
+		<%= link_to 'Relatorio', administracoes_path, :class => "menuconsultar" %>
+		
+	</div>
+	
 	<% else %>
 
   <h2>Murilo Manhães - Soluções em Informática</h2>
@@ -43,10 +49,9 @@
           
         </li>
       </ul>
-          
-          
+                   
     <% end %>  
-    
+            
   <%end%>
   </div>
 

@@ -820,7 +820,7 @@ a{
   width: 170px;
   height: 100px;
   margin-left: 15px;
-  background: url("/assets/cadnoticia.gif") no-repeat 0 0;
+  background: url("/assets/alterarnoticia.gif") no-repeat 0 0;
  }
  
  .alterarparceiro {
@@ -828,5 +828,5 @@ a{
   width: 170px;
   height: 100px;
   margin-left: 15px;
-  background: url("/assets/cadparceiro.gif") no-repeat 0 0;
+  background: url("/assets/alterarparceiro.gif") no-repeat 0 0;
  }

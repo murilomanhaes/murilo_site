@@ -1,0 +1,44 @@
+<div id="ladodireito">
+  
+  <h2> 
+    <%= @suporte.usuario.nome %> <%= @suporte.usuario.sobrenome %> <%= link_to 'ver', usuario_path(usuario) %>
+  </h2><br>
+  
+  
+  <p>
+    <b>Data</b>
+    <%= @suporte.data.to_s_br %>
+  </p>
+ 
+  <p>
+    <b>Problema:</b>
+    <%= @suporte.problema %>
+  </p>
+  
+  
+  <% if can? :manage, :all %>
+    <p>
+      <b>Data conclusao:</b>
+      <%= @suporte.data_conclusao.to_s_br %>
+    </p>
+
+    <p>
+      <b>Conclusao:</b>
+      <%= @suporte.conclusao %>
+    </p>
+    
+    <br><br>
+    
+	  <li><a><%= link_to 'Voltar', new_suporte_path %></a></li>
+	<% else %>
+	  
+	  <br><br>
+	  <li><a><%= link_to 'Voltar', root_path %></a></li>
+	<% end %>
+
+</div>
+
+
+
+
+

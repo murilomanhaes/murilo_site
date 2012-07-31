@@ -1,0 +1,34 @@
+<div id="ladodireito">
+  <h2>Lista de Suportes</h2><br>
+
+<table>
+  <tr>
+    <th>Usuario</th>
+    <th>Problema</th>
+    <th>Data</th>
+    <th>Data conclusao</th>
+    <th>Conclusao</th>
+    <th></th>
+   
+  </tr>
+
+<% @suportes.each do |suporte| %>
+
+  <% if suporte.concluido? %>
+
+  <% else %>
+  <tr>
+    <td><%= suporte.usuario.nome %></td>
+    <td><%= suporte.problema %></td>
+    <td><%= suporte.data %></td>
+    <td><%= suporte.data_conclusao %></td>
+    <td><%= suporte.conclusao %></td>
+    <td>
+    <%= link_to 'Concluir', concluir_marcacao_path(marcacao) %></td>
+        <%end%>
+    </tr>
+
+  <% end %>
+</table>
+
+</div>

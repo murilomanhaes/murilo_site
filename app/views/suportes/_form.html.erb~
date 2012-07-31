@@ -1,0 +1,11 @@
+<div id="formulario">
+  <%= semantic_form_for(@suporte) do |f| %>
+  
+    
+		<%= usuario_id = current_usuario.id %>
+		     
+    <%= f.input :problema, input_html: opcoes_para_observacao %>
+    
+    <%= f.submit 'Salvar' %>
+  <% end %>
+</div>

@@ -1,0 +1,9 @@
+<div id="formulario">
+  <%= semantic_form_for(@suporte) do |f| %>
+  
+    
+    <%= f.input :problema, input_html: opcoes_para_observacao %>
+    
+    <%= f.submit 'Salvar' %>
+  <% end %>
+</div>

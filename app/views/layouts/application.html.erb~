@@ -32,8 +32,8 @@
 				  
 				  <%else%>
 				    <li><%= link_to "Login", usuario_session_path, :class => "sites" %></li>
-				  
 				  <% end %>
+				  
 				  
           <% if usuario_signed_in? %>
           
@@ -51,7 +51,7 @@
 			<div id="menu2">
 				<ul class="link">
 					<li><%= link_to "Serviços", servicos_path %></li>
-					<li class="suporte"><a href="#">Suporte</a></li>
+					<li class="suporte"><%= link_to "Suporte", new_suporte_path %></li>
 					<li class="solucoes"><%= link_to "Soluções",solucoes_path %></li>
 				</ul>
 			</div>
@@ -90,6 +90,13 @@
 			      <li><%= link_to "Computadores",computadores_path %>|</li>
 			      <li><%= link_to "Sites", sites_path %>|</li>
 			      <li><a href="#">Contato</a></li>
+			      
+			      <% if usuario_signed_in? %>
+				  
+				    <%else%>
+				      <li>|<%= link_to "Login", usuario_session_path%></li>
+				    <% end %>
+				    
 			      <% if usuario_signed_in? %>
           
               <li>|<%= link_to 'Sair', destroy_usuario_session_path, method: :delete %></li>

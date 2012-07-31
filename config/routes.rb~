@@ -1,4 +1,5 @@
 MuriloSite::Application.routes.draw do
+
   resources :parceiros
 
   resources :novidades
@@ -17,6 +18,19 @@ MuriloSite::Application.routes.draw do
       get :alterar_deletar
       get :cadastrar
       get :consultar
+    end
+  end
+  
+  resources :suportes, except: [:edit, :update, :destroy] do
+		member do
+		  get :concluir
+		  put :salvar_conclusao
+	  end
+
+	  collection do
+      get :concluidas
+      get :consultar_concluidas
+      get :consultar_marcadas
     end
   end
   

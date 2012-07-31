@@ -22,6 +22,7 @@
 				    <li><a><p class="ola">Olá</p> <p class="usuarionome"><%= current_usuario.nome %> <%= current_usuario.tipo %></p></a></li>
 				  <% end %>
        
+          
 				  <li><%= link_to "Inicial",root_path , :class=> "inicio" %></li>
 				  <li><%= link_to "Quem Somos",somos_path , :class=> "somos" %></li>
 				  <li><%= link_to "Computadores", computadores_path, :class => "computadores" %></li>
@@ -51,7 +52,7 @@
 			<div id="menu2">
 				<ul class="link">
 					<li><%= link_to "Serviços", servicos_path %></li>
-					<li class="suporte"><a href="#">Suporte</a></li>
+					<li class="suporte"><%= link_to "Suporte", new_suporte_path %></li>
 					<li class="solucoes"><%= link_to "Soluções",solucoes_path %></li>
 				</ul>
 			</div>

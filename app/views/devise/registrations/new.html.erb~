@@ -34,11 +34,12 @@
     <fieldset class="dados_fieldset">
     <br>
       <legend> Dados Autenticação</legend>
-        <%= f.input :tipo%>
         <%= f.input :email, label: 'E-mail' %>
         <%= f.input :password, label: 'Senha' %>
         <%= f.input :password_confirmation, label: 'Senha Conf.' %>
     </fieldset>
+    
+    <%= f.input :tipo%>
 
     <br><br>
 

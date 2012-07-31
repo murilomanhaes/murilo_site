@@ -1,7 +1,7 @@
 <div id="ladodireito">
   
   <h2> 
-    <%= @suporte.usuario.nome %> <%= @suporte.usuario.sobrenome %> <%= link_to 'ver', usuario_path(usuario) %>
+    <%= @suporte.usuario.nome %> <%= @suporte.usuario.sobrenome %> 
   </h2><br>
   
   
@@ -29,7 +29,7 @@
     
     <br><br>
     
-	  <li><a><%= link_to 'Voltar', new_suporte_path %></a></li>
+	  <li><a><%= link_to 'Voltar', adminsuporte_suportes_path %></a></li>
 	<% else %>
 	  
 	  <br><br>

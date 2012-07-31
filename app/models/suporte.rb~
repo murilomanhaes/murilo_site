@@ -8,6 +8,9 @@ class Suporte < ActiveRecord::Base
     self.data = Date.today
   end
   
+  def concluido?
+   	data_conclusao.present?
+  end
       
   attr_accessible :problema, :usuario_id
 end

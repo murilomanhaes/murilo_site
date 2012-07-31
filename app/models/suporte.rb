@@ -12,5 +12,5 @@ class Suporte < ActiveRecord::Base
    	data_conclusao.present?
   end
       
-  attr_accessible :problema, :usuario_id
+  attr_accessible :problema, :usuario_id, :data_conclusao, :conclusao
 end

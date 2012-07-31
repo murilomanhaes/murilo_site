@@ -1,34 +1,29 @@
 <div id="ladodireito">
-  <h2>Lista de Suportes</h2><br>
+  <h2>Concluir Suportes</h2><br>
 
 <table>
   <tr>
     <th>Usuario</th>
     <th>Problema</th>
     <th>Data</th>
-    <th>Data conclusao</th>
-    <th>Conclusao</th>
     <th></th>
-   
   </tr>
 
-<% @suportes.each do |suporte| %>
+  <% for suporte in @suportes %>
 
   <% if suporte.concluido? %>
 
+
   <% else %>
   <tr>
-    <td><%= suporte.usuario.nome %></td>
+    <td><%= suporte.usuario.nome%></td>
     <td><%= suporte.problema %></td>
-    <td><%= suporte.data %></td>
-    <td><%= suporte.data_conclusao %></td>
-    <td><%= suporte.conclusao %></td>
-    <td>
-    <%= link_to 'Concluir', concluir_marcacao_path(marcacao) %></td>
-        <%end%>
-    </tr>
+    <td><%= suporte.data.to_s_br %></td>
+    <td><%= link_to 'Concluir', concluir_suporte_path(suporte) %></td>
+   </tr>
+  <%end%>
+
 
   <% end %>
 </table>
-
 </div>

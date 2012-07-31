@@ -6,13 +6,7 @@ class SuportesController < ApplicationController
   
   def index
     @suportes = Suporte.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @suportes }
-    end
   end
-
 
   def show
     @suporte = Suporte.find(params[:id])
@@ -32,6 +26,14 @@ class SuportesController < ApplicationController
       format.json { render json: @suporte }
     end
   end
+  
+  def adminsuporte
+  
+  end
+  
+  def concluidos
+    @suportes = Suporte.all
+  end
 
 
 
@@ -44,6 +46,25 @@ class SuportesController < ApplicationController
         format.json { render json: @suporte, status: :created, location: @suporte }
       else
         format.html { render action: "new" }
+        format.json { render json: @suporte.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  
+  
+  def concluir
+    @suporte = Suporte.find(params[:id])
+  end
+
+  def salvar_conclusao
+    @suporte = Suporte.find(params[:id])
+
+    respond_to do |format|
+      if @suporte.update_attributes(params[:suporte])
+        format.html { redirect_to @suporte, notice: 'Suporte concluido com sucesso.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "concluir" }
         format.json { render json: @suporte.errors, status: :unprocessable_entity }
       end
     end

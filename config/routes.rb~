@@ -26,11 +26,9 @@ MuriloSite::Application.routes.draw do
 		  get :concluir
 		  put :salvar_conclusao
 	  end
-
 	  collection do
-      get :concluidas
-      get :consultar_concluidas
-      get :consultar_marcadas
+      get :adminsuporte
+      get :concluidos
     end
   end
   

@@ -1,29 +1,31 @@
 <div id="ladodireito">
-  <h2>Concluir Suportes</h2><br>
+  <h2>Suportes Concluidos</h2><br>
 
 <table>
   <tr>
     <th>Usuario</th>
     <th>Problema</th>
     <th>Data</th>
-    <th></th>
+    <th>Data Conclusão</th>
+    <th>Conclusão</th>
   </tr>
 
   <% for suporte in @suportes %>
 
   <% if suporte.concluido? %>
-
-
-  <% else %>
   <tr>
     <td><%= suporte.usuario_id%></td>
     <td><%= suporte.problema %></td>
     <td><%= suporte.data.to_s_br %></td>
-    <td><%= link_to 'Concluir', concluir_suporte_path(suporte) %></td>
+    <td><%= suporte.data_conclusao.to_s_br %></td>
+    <td><%= suporte.conclusao %></td>
    </tr>
-  <%end%>
 
+  <% else %>
+  
+  <% end %>
 
   <% end %>
 </table>
+
 </div>

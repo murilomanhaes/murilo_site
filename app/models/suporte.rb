@@ -3,6 +3,8 @@ class Suporte < ActiveRecord::Base
   belongs_to :usuario
 
   before_create :definir_data
+  
+  validates :problema, presence: true
 
   def definir_data
     self.data = Date.today

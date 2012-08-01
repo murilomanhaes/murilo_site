@@ -1,6 +1,5 @@
-<h1>Editar novidade</h1>
+<h2>Editar novidade</h2>
 
 <%= render 'form' %>
 
-<%= link_to 'Ver', @novidade %> |
 

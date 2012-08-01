@@ -39,7 +39,8 @@
         <%= f.input :password_confirmation, label: 'Senha Conf.' %>
     </fieldset>
     
-    <%= f.input :tipo%>
+    <%= f.input :tipo %>
+    
 
     <br><br>
 

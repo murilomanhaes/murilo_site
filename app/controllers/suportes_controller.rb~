@@ -4,6 +4,10 @@ class SuportesController < ApplicationController
   before_filter :authenticate_usuario! 
   
   
+  def index
+    @suportes = Suporte.all
+  end
+
   def show
     @suporte = Suporte.find(params[:id])
 
@@ -13,7 +17,7 @@ class SuportesController < ApplicationController
     end
   end
 
-
+  
   def new
     @suporte = Suporte.new
 
@@ -28,10 +32,6 @@ class SuportesController < ApplicationController
   end
   
   def concluidos
-    @suportes = Suporte.all
-  end
-  
-  def index
     @suportes = Suporte.all
   end
 
@@ -68,6 +68,13 @@ class SuportesController < ApplicationController
         format.json { render json: @suporte.errors, status: :unprocessable_entity }
       end
     end
+  end
+  
+ 
+  def consultar_concluidos
+    usuario_id = params[:usuario_id]
+    @suportes = Suporte.where('UPPER(usuario_id) LIKE ?', "%#{usuario_id.upcase}%")
+    render 'concluidos'
   end
 
 

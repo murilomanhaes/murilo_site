@@ -1,6 +1,5 @@
-<h1>Editing parceiro</h1>
+<h1>Editar parceiro</h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @parceiro %> |
-<%= link_to 'Back', parceiros_path %>
+

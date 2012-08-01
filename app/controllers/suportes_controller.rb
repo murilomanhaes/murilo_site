@@ -17,7 +17,7 @@ class SuportesController < ApplicationController
     end
   end
 
-
+  
   def new
     @suporte = Suporte.new
 
@@ -68,6 +68,13 @@ class SuportesController < ApplicationController
         format.json { render json: @suporte.errors, status: :unprocessable_entity }
       end
     end
+  end
+  
+ 
+  def consultar_concluidos
+    usuario_id = params[:usuario_id]
+    @suportes = Suporte.where('UPPER(usuario_id) LIKE ?', "%#{usuario_id.upcase}%")
+    render 'concluidos'
   end
 
 

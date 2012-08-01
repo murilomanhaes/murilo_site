@@ -125,7 +125,23 @@ a{
 
 
 
+/*Configurações para relatorio*/
 
+#relatorio{
+  float: left;
+  width: 700px;
+  margin-top: 25px;
+  margin-left: 0px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#relatorio{
+  margin-bottom: 30px;
+}
+#relatorio td, th{
+  border: 1px solid black;
+}
 
 
 /*Configurações para estrutura do site*/

@@ -1,9 +1,10 @@
 <div id="ladodireito">
+
   <h2>Concluir Suportes</h2><br>
 
-<table>
+<table id="relatorio">
   <tr>
-    <th>Usuario</th>
+    <th>Usuário</th>
     <th>Problema</th>
     <th>Data</th>
     <th></th>
@@ -16,7 +17,7 @@
 
   <% else %>
   <tr>
-    <td><%= suporte.usuario.nome%></td>
+    <td><%= suporte.usuario.nome%> <%= suporte.usuario.sobrenome %></td>
     <td><%= suporte.problema %></td>
     <td><%= suporte.data.to_s_br %></td>
     <td><%= link_to 'Concluir', concluir_suporte_path(suporte) %></td>

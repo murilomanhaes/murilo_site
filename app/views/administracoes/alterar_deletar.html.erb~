@@ -1,6 +1,5 @@
 <div id="ladodireito">
-  <h2>Alterar / Deletar</h2>
-  <br> 
+
   <div id="menuadminitrador">
 	    <%= link_to '', novidades_path, :class => "alterarnoticia" %>
 	    <%= link_to '', parceiros_path, :class => "alterarparceiro" %>

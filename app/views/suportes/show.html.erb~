@@ -29,11 +29,11 @@
     
     <br><br>
     
-	  <li><a><%= link_to 'Voltar', adminsuporte_suportes_path %></a></li>
+	  <li><a><%= link_to '', adminsuporte_suportes_path, :class => "voltar" %></a></li>
 	<% else %>
 	  
 	  <br><br>
-	  <li><a><%= link_to 'Voltar', root_path %></a></li>
+	  <li><a><%= link_to '', root_path, :class => "voltar" %></a></li>
 	<% end %>
 
 </div>

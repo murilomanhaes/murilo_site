@@ -1,8 +1,7 @@
 <div id="ladodireito">
 
   <div id="menuadminitrador">
-	    <%= link_to 'Cadastrar', new_suporte_path%>
-	    <%= link_to 'Concluir', suportes_path%>
-	    <%= link_to 'Concluir', concluidos_suportes_path%>
-	</div>
+      <%= link_to '', new_suporte_path, :class => "cadastrarsuporte" %>
+	    <%= link_to '', suportes_path, :class => "concluirsuporte" %>
+	    <%= link_to '', concluidos_suportes_path, :class => "concluidossuporte" %>
 </div>

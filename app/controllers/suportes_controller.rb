@@ -72,10 +72,11 @@ class SuportesController < ApplicationController
   
  
   def consultar_concluidos
-    usuario_id = params[:usuario_id]
-    @suportes = Suporte.where('UPPER(usuario_id) LIKE ?', "%#{usuario_id.upcase}%")
+    nome = params[:nome]
+    @usuarios = Usuario.where('upper(nome) like ?', "%#{nome.upcase}%")
     render 'concluidos'
   end
+   
 
 
 end

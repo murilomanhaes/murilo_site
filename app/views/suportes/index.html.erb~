@@ -17,7 +17,7 @@
 
   <% else %>
   <tr>
-    <td><%= suporte.usuario.nome%> <%= suporte.usuario.sobrenome %></td>
+    <td><%= link_to suporte.usuario.nome, show_usuario_path(suporte.usuario) %></td>
     <td><%= suporte.problema %></td>
     <td><%= suporte.data.to_s_br %></td>
     <td><%= link_to 'Concluir', concluir_suporte_path(suporte) %></td>

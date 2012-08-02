@@ -1,8 +1,10 @@
 <div id="ladodireito">
-  <h2>Cadastrar</h2>
-  <br> 
+ 
   <div id="menuadminitrador">
 	    <%= link_to '', new_novidade_path, :class => "cadastrarnoticia" %>
 	    <%= link_to '', new_parceiro_path, :class => "cadastrarparceiro" %>
 	</div>
+	
+	 <%= link_to '', new_novidade_path, :class => "voltar"%>
+	 
 </div>

@@ -3,8 +3,8 @@
   
   <div id='consulta'>
    <%= form_tag consultar_concluidos_suportes_path, method: :get do %>
-     <%= label_tag :usuario_id, 'Busca por nome' %>
-     <%= text_field_tag :usuario_id %>
+     <%= label_tag :nome_usuario, 'Busca por nome' %>
+     <%= text_field_tag :nome_usuario %>
      <%= submit_tag 'Buscar' %>
    <% end %>
   </div>

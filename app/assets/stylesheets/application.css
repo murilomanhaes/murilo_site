@@ -123,6 +123,14 @@ a{
   background: url("/assets/deletar.gif") no-repeat 0 0;
 }
 
+.voltar { 
+  float: left;
+  width: 60px;
+  height: 20px;
+  margin-left: 0;
+  margin-top: 15px;
+  background: url("/assets/botao_voltar.gif") no-repeat 0 0;
+}
 
 
 /*Configurações para relatorio*/
@@ -828,7 +836,29 @@ a{
   background: url("/assets/cadparceiro.gif") no-repeat 0 0;
  }
  
+ .cadastrarsuporte {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 15px;
+  background: url("/assets/cadsuporte.gif") no-repeat 0 0;
+ }
  
+ .concluirsuporte {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 15px;
+  background: url("/assets/concluirsuporte.gif") no-repeat 0 0;
+ }
+ 
+ .concluidossuporte {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 15px;
+  background: url("/assets/concluidossuporte.gif") no-repeat 0 0;
+ }
  
  
  .alterarnoticia {

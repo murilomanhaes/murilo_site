@@ -9,7 +9,10 @@ text-decoration:none;
 }
 
 
-/*Configurações para as mensagens*/
+
+
+
+/*Configurações para as noticias e alertas*/
 
 #notice {
   float: left;
@@ -66,6 +69,12 @@ text-decoration:none;
 }
 
 
+
+
+
+
+
+
 /*Configurações para o login*/
 
 #login{
@@ -85,6 +94,11 @@ text-decoration:none;
   margin-top: 170px;
   margin-left: 80px;
 }
+
+
+
+
+
 
 /*Configurações gerais para todas as paginas*/
 
@@ -111,7 +125,6 @@ a{
   float: left;
   width: 20px;
   height: 20px;
-  margin-left: 33%;
   background: url("/assets/editar.png") no-repeat 0 0;
 }
 
@@ -119,7 +132,7 @@ a{
   float: left;
   width: 20px;
   height: 20px;
-  margin-left: 33%;
+  margin-left: 10px;
   background: url("/assets/deletar.gif") no-repeat 0 0;
 }
 
@@ -132,24 +145,24 @@ a{
   background: url("/assets/botao_voltar.gif") no-repeat 0 0;
 }
 
+#botoesrelatorio {
+  float: right;
+  width: 50px;
+  height: 20px;
+  margin-bottom: 10px;
+}
 
-/*Configurações para relatorio*/
-
-#relatorio{
+#consulta {
   float: left;
-  width: 700px;
-  margin-top: 15px;
-  margin-left: 0px;
-  text-align: center;
-  border: 1px solid black;
+  width: 450px;
+  height: 40px;
+  margin-left: 120px;
 }
 
-#relatorio{
-  margin-bottom: 30px;
-}
-#relatorio td, th{
-  border: 1px solid black;
-}
+
+
+
+
 
 
 /*Configurações para estrutura do site*/
@@ -437,6 +450,9 @@ a{
 
 
 
+
+
+
 /*Configurações para as noticia*/
 
 
@@ -468,7 +484,7 @@ a{
 	margin:0 0 15px 0px; 
 	padding:0; 
 	display:block;
-		border-bottom:#C9B884 1px dashed; 
+	border-bottom:#C9B884 1px dashed; 
 }
 
 #noticias ul li{
@@ -523,17 +539,24 @@ a{
 	font-size:10px;  
 } 
 
-.noticiasrelatorio {
+
+
+
+
+
+#relatorionoticia {
   float: left;
   width: 550px;
-  margin-left: 30px;
-  border: 1px solid black;
-  text-align: center;
+  border-bottom:#C9B884 1px dashed; 
 }
 
-.noticiasrelatorio td, tr, th{
-   border: 1px solid black;
+#relatorionoticia p{
+  float: left;
+  margin-left: 40px;
 }
+
+
+
 
 
 
@@ -593,17 +616,20 @@ a{
 	width:170px;
 }
 
-.parceirosrelatorio {
+
+
+
+#relatorioparceiro {
   float: left;
   width: 550px;
-  margin-left: 30px;
-  border: 1px solid black;
-  text-align: center;
+  border-bottom:#C9B884 1px dashed; 
 }
 
-.parceirosrelatorio td, tr, th{
-   border: 1px solid black;
+#relatorioparceiro p{
+  float: left;
+  margin-left: 40px;
 }
+
 
 
 /*configurações para o rodape*/
@@ -650,6 +676,8 @@ a{
 	font:12px/14px 'Trebuchet MS', Arial, Helvetica, sans-serif; color:#F3F1DF;
 	background-color:#6B6854
 }
+
+
 
 
 
@@ -736,6 +764,8 @@ a{
 
 /*Configurações para a aba solucoes*/
 
+
+
 .conteiner {
 	width: 250px;
 	min-height: 200px;
@@ -771,6 +801,13 @@ a{
   margin-left: 30px;
   border-right:#C9B884 1px dashed;
 }
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -876,3 +913,54 @@ a{
   margin-left: 15px;
   background: url("/assets/alterarparceiro.gif") no-repeat 0 0;
  }
+ 
+ 
+ 
+ 
+ /*Configurações para suportes*/
+
+#relatoriosuporte {
+  float: left;
+  width: 700px;
+}
+
+.linharealatoriosuporte{
+  float: left;
+  width: 700px;
+  border-bottom:#C9B884 1px dashed; 
+}
+
+#relatoriosuporte .datasuporte {
+  float: right;
+  width: 40px;
+  margin-top: -20px;
+  margin-right: 15px;
+	font-size:10px;  
+} 
+
+#relatoriosuporte p{
+  float: left;
+  margin-left: 40px;
+}
+
+
+
+#relatorioconcluidos {
+  float: left;
+  width: 700px;
+  margin-bottom: 10px;
+  border-bottom:#C9B884 1px dashed; 
+}
+
+
+#relatorioconcluidos .datasuporte {
+  float: right;
+  width: 40px;
+  margin-top: -20px;
+  margin-right: 15px;
+	font-size:10px;  
+} 
+
+
+
+

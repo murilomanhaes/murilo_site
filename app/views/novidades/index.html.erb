@@ -1,23 +1,20 @@
 <div id="ladodireito">
-  <h2>Novidades</h2>
-  <br>  
-
-  <table class="noticiasrelatorio">
-    <tr>
-      <th>Título</th>
-      <th>Resumo</th>
-      <th></th>
-      <th></th>
-    </tr>
-
+  <h2>Notícias</h2>
+  <br>
+    
   <% @novidades.each do |novidade| %>
-    <tr>
-      <td><%= novidade.titulo %></td>
-      <td><%= novidade.resumo %></td>
-      <td><%= link_to '', edit_novidade_path(novidade), :class=> "editar"%></td>
-      <td><%= link_to '', novidade, confirm: 'Deseja realmente apagar?', method: :delete, :class=>"deletar" %></td>
-    </tr>
+    <div id = "relatorionoticia">
+      <h2><%= novidade.titulo %></h2>
+      <p><%= novidade.resumo %></p>
+      <br>
+  
+      <div id = "botoesrelatorio">
+        <%= link_to '', edit_novidade_path(novidade), :class=> "editar"%>
+        <%= link_to '', novidade, confirm: 'Deseja realmente apagar?', method: :delete, :class=>"deletar" %>
+      </div> 
+    </div> 
   <% end %>
-  </table>
-
+  
+  
+  <%= link_to '', alterar_deletar_administracoes_path, :class => "voltar"%>
 </div>

@@ -4,4 +4,7 @@
       <%= link_to '', new_suporte_path, :class => "cadastrarsuporte" %>
 	    <%= link_to '', suportes_path, :class => "concluirsuporte" %>
 	    <%= link_to '', concluidos_suportes_path, :class => "concluidossuporte" %>
+  </div>
+  
+      <%= link_to '', cadastrar_administracoes_path, :class => "voltar"%>
 </div>

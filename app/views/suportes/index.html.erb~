@@ -2,29 +2,26 @@
 
   <h2>Concluir Suportes</h2><br>
 
-<table id="relatorio">
-  <tr>
-    <th>Usuário</th>
-    <th>Problema</th>
-    <th>Data</th>
-    <th></th>
-  </tr>
-
   <% for suporte in @suportes %>
+      
+    <div id = "relatoriosuporte">
+      <% if suporte.concluido? %>
+      
+      <% else %>
+        <div class="linharealatoriosuporte">
+          <h2><%= link_to suporte.usuario.nome %></h2>
+          <p class="datasuporte"><%= suporte.data.to_s_br %></p><br>
+          
+          <p><%= suporte.problema %></p>
+          
+            <div id = "botoesrelatorio">
+              <%= link_to 'Concluir', concluir_suporte_path(suporte) %>
+            </div>
+        </div>
+      <%end%>
+    </div>
+ <% end %>
+ 
+   <%= link_to '', adminsuporte_suportes_path, :class => "voltar"%>
 
-  <% if suporte.concluido? %>
-
-
-  <% else %>
-  <tr>
-    <td><%= link_to suporte.usuario.nome, show_usuario_path(suporte.usuario) %></td>
-    <td><%= suporte.problema %></td>
-    <td><%= suporte.data.to_s_br %></td>
-    <td><%= link_to 'Concluir', concluir_suporte_path(suporte) %></td>
-   </tr>
-  <%end%>
-
-
-  <% end %>
-</table>
 </div>

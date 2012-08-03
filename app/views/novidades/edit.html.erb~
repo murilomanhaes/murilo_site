@@ -1,5 +1,9 @@
-<h2>Editar novidade</h2>
+<div id="ladodireito">
+
+<h2>Editar notícias</h2>
 
 <%= render 'form' %>
+
+</div>
 
 

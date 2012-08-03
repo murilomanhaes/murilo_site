@@ -2,22 +2,19 @@
   <h2>Parceiros</h2>
   <br>  
 
-  <table class="parceirosrelatorio">
-    <tr>
-      <th>Nome</th>
-      <th>Endereço</th>
-      <th></th>
-      <th></th>
-    </tr>
-
   <% @parceiros.each do |parceiro| %>
-    <tr>
-      <td><%= parceiro.nome %></td>
-      <td><%= parceiro.endereco %></td>
-      <td><%= link_to '', edit_parceiro_path(parceiro), :class=> "editar"%></td>
-      <td><%= link_to '', parceiro, confirm: 'Deseja realmente apagar?', method: :delete, :class=>"deletar" %></td>
-    </tr>
+    <div id = "relatorioparceiro">
+      <h2><%= parceiro.nome %></h2>
+      <p><%= parceiro.endereco %></p>
+      <br>
+      
+      <div id = "botoesrelatorio">
+        <%= link_to '', edit_parceiro_path(parceiro), :class=> "editar"%>
+        <%= link_to '', parceiro, confirm: 'Deseja realmente apagar?', method: :delete, :class=>"deletar" %>
+      </div>
+    </div>
   <% end %>
-  </table>
-
+  
+  
+  <%= link_to '', alterar_deletar_administracoes_path, :class => "voltar"%>
 </div>

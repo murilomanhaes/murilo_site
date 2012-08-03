@@ -6,5 +6,4 @@
 
   <%= render 'form' %>
   
-<a><%= link_to "mais",parceiros_path %></a>
 </div>

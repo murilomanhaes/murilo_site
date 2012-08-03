@@ -3,35 +3,29 @@
   
   <div id='consulta'>
    <%= form_tag consultar_concluidos_suportes_path, method: :get do %>
-     <%= label_tag :nome_usuario, 'Busca por nome' %>
-     <%= text_field_tag :nome_usuario %>
+     <%= label_tag :nome, 'Busca por nome' %>
+     <%= text_field_tag :nome %>
      <%= submit_tag 'Buscar' %>
    <% end %>
   </div>
 
-<table id="relatorio">
-  <tr>
-    <th>Usuário</th>
-    <th>Problema</th>
-    <th>Data Conclusão</th>
-    <th>Conclusão</th>
-  </tr>
+<br>
 
   <% for suporte in @suportes %>
-
-  <% if suporte.concluido? %>
-  <tr>
-    <td><%= suporte.usuario.nome%> <%= suporte.usuario.sobrenome %></td>
-    <td><%= suporte.problema %></td>
-    <td><%= suporte.data_conclusao.to_s_br %></td>
-    <td><%= suporte.conclusao %></td>
-   </tr>
-
-  <% else %>
   
-  <% end %>
+    <div id = "relatorioconcluidos">
 
-  <% end %>
-</table>
+      <% if suporte.concluido? %>    
+        <h2><%= suporte.usuario.nome%> <%= suporte.usuario.sobrenome %></h2>
+        <p class="datasuporte"><%= suporte.data_conclusao.to_s_br %></p></br>
+        
+        <p> Problema: <%= suporte.problema %></p>
+        
+        <p> Conclusão: <%= suporte.conclusao %></p>
+      <% end %>
+    </div>
+    <br><br>
+ <% end %>
 
+   <%= link_to '', adminsuporte_suportes_path, :class => "voltar"%>
 </div>

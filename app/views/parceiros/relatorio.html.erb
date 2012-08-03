@@ -1,0 +1,15 @@
+<div id="ladodireito">
+  <h2>Consultar e Relatório Parceiros</h2>
+  <br>  
+
+  <% @parceiros.each do |parceiro| %>
+    <div id = "relatorioparceiro">
+      <h2><%= parceiro.nome %></h2>
+      <p><%= parceiro.endereco %></p>
+      <br>
+    </div>
+  <% end %>
+  
+  
+  <%= link_to '', consultar_relatorio_administracoes_path, :class => "voltar"%>
+</div>

@@ -1,7 +1,7 @@
 class NovidadesController < ApplicationController
   
-  before_filter :authenticate_usuario!
-  load_and_authorize_resource     
+  load_and_authorize_resource
+  before_filter :authenticate_usuario!     
   
   # GET /novidades
   # GET /novidades.json
@@ -12,6 +12,10 @@ class NovidadesController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @novidades }
     end
+  end
+  
+  def relatorio
+    @novidades = Novidade.all
   end
 
   # GET /novidades/1

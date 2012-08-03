@@ -14,6 +14,10 @@ class ParceirosController < ApplicationController
       format.json { render json: @parceiros }
     end
   end
+  
+  def relatorio
+    @parceiros = Parceiro.all
+  end
 
   # GET /parceiros/1
   # GET /parceiros/1.json

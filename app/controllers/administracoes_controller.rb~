@@ -1,4 +1,4 @@
-class AdministrarController < ApplicationController
+class AdministracoesController < ApplicationController
   
     
   def index

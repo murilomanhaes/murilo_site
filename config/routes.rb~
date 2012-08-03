@@ -1,8 +1,17 @@
 MuriloSite::Application.routes.draw do
 
-  resources :parceiros
+  resources :parceiros do 
+    collection do 
+      get :relatorio
+    end
+  end
+    
 
-  resources :novidades
+  resources :novidades do 
+    collection do 
+      get :relatorio
+    end
+  end
 
   devise_for :usuarios
 
@@ -17,7 +26,7 @@ MuriloSite::Application.routes.draw do
      collection do
       get :alterar_deletar
       get :cadastrar
-      get :consultar
+      get :consultar_relatorio
     end
   end
   
@@ -29,7 +38,7 @@ MuriloSite::Application.routes.draw do
 	  collection do
       get :adminsuporte
       get :concluidos
-      get :consultar_concluidas
+      get :consultar_concluidos
     end
   end
   

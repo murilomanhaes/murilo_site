@@ -1,7 +1,8 @@
 class ParceirosController < ApplicationController
   
+  load_and_authorize_resource
   before_filter :authenticate_usuario!
-  load_and_authorize_resource  
+    
     
   # GET /parceiros
   # GET /parceiros.json
@@ -12,6 +13,10 @@ class ParceirosController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @parceiros }
     end
+  end
+  
+  def relatorio
+    @parceiros = Parceiro.all
   end
 
   # GET /parceiros/1

@@ -13,6 +13,10 @@ class NovidadesController < ApplicationController
       format.json { render json: @novidades }
     end
   end
+  
+  def relatorio
+    @novidades = Novidade.all
+  end
 
   # GET /novidades/1
   # GET /novidades/1.json

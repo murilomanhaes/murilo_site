@@ -1,0 +1,15 @@
+<div id="ladodireito">
+  <h2>Notícias</h2>
+  <br>
+    
+  <% @novidades.each do |novidade| %>
+    <div id = "relatorionoticia">
+      <h2><%= novidade.titulo %></h2>
+      <p><%= novidade.resumo %></p>
+      <br>
+    </div> 
+  <% end %>
+  
+  
+  <%= link_to '', consultar_relatorio_administracoes_path, :class => "voltar"%>
+</div>

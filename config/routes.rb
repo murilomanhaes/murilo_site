@@ -1,7 +1,17 @@
 MuriloSite::Application.routes.draw do
 
-  resources :contatos
-
+  resources :contatos do
+    member do
+		  get :concluir
+		  put :salvar_conclusao
+	  end
+	   
+    collection do
+      get :admincontato
+      get :concluidos
+    end
+  end
+  
   resources :parceiros do 
     collection do 
       get :relatorio

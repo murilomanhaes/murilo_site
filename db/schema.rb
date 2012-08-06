@@ -18,8 +18,10 @@ ActiveRecord::Schema.define(:version => 20120806211903) do
     t.string   "email"
     t.string   "telefone"
     t.text     "mensagem"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.date     "data_conclusao"
+    t.text     "conclusao"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "novidades", :force => true do |t|

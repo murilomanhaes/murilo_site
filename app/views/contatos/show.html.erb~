@@ -20,7 +20,7 @@
 </p>
 
 <% if can? :manage, :all %>
-	  <li><a><%= link_to '', new_contato_path, :class => "voltar"%></a></li>
+	  <li><a><%= link_to '', contatos_path, :class => "voltar"%></a></li>
 	<% else %>
 	  <li><a><%= link_to '', root_path, :class => "voltar" %></a></li>
 	<% end %>

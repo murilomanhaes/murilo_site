@@ -20,10 +20,28 @@
 </p>
 
 <% if can? :manage, :all %>
-	  <li><a><%= link_to '', new_contato_path, :class => "voltar"%></a></li>
+    <p>
+      <b>Data conclusao:</b>
+      <%= @contato.data_conclusao.to_s_br %>
+    </p>
+
+    <p>
+      <b>Conclusao:</b>
+      <%= @contato.conclusao %>
+    </p>
+    
+    <br><br>
+    
+	  <li><a><%= link_to '', contatos_path, :class => "voltar" %></a></li>
 	<% else %>
+	  
+	  <br><br>
 	  <li><a><%= link_to '', root_path, :class => "voltar" %></a></li>
 	<% end %>
 
 </div>
+
+
+
+
 

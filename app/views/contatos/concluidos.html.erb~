@@ -1,0 +1,25 @@
+<div id="ladodireito">
+  <h2>Contatos Concluidos</h2><br>
+  
+  
+<br>
+
+  <% for contato in @contatos %>
+  
+    <div id = "relatorioconcluidos">
+
+      <% if contato.concluido? %>    
+        <h2><%= contato.nome%> </h2>
+        <p class="datasuporte"><%= contato.data_conclusao.to_s_br %></p></br>
+        
+        <p> E-mail: <%= contato.email %></p>
+        <p> Mensagem: <%= contato.mensagem %></p>
+        
+        <p> Conclusão: <%= contato.conclusao %></p>
+      <% end %>
+    </div>
+    <br><br>
+ <% end %>
+
+   <%= link_to '', admincontato_contatos_path, :class => "voltar"%>
+</div>

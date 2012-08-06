@@ -42,6 +42,7 @@
     <%= f.input :tipo%>
     
     
+    
 
     <br><br>
 

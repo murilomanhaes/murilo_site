@@ -27,7 +27,13 @@
 				  <li><%= link_to "Quem Somos",somos_path , :class=> "somos" %></li>
 				  <li><%= link_to "Computadores", computadores_path, :class => "computadores" %></li>
 				  <li><%= link_to "Sites", sites_path, :class => "sites" %></li>
-				  <li><%= link_to "Contato", new_contato_path, :class => "contato"%></li>
+				  
+				  <% if can? :manage, :all %>
+					  <li><%= link_to "Contato", admincontato_contatos_path, :class => "contato"%></li>
+					<% else %>
+  				  <li><%= link_to "Contato", new_contato_path, :class => "contato"%></li>
+				  <% end %>
+
 				  
 				  <% if usuario_signed_in? %>
 				  

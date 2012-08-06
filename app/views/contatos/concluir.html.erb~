@@ -1,0 +1,15 @@
+<div id="ladodireito">
+
+<h2>Concluir Contato</h2>
+<br>
+<%= semantic_form_for @xontato, url: salvar_conclusao_contato_path(@contato), method: :put do |f| %>
+
+   <%= f.input :conclusao, label: "Conclusão", input_html: opcoes_para_observacao%>
+   <%= f.input :data_conclusao, as: :string, label: "Data",
+       input_html: { value: Date.today.to_s_br } %>
+       
+       <br>
+   <%= f.submit 'Concluir Contato'%>
+<% end %>
+
+</div>

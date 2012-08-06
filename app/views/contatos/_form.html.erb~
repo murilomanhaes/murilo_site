@@ -1,0 +1,10 @@
+<div id="formulario">
+  <%= semantic_form_for(@contato) do |f| %>
+    <%= f.input :nome %>
+    <%= f.input :email %>
+    <%= f.input :telefone, input_html: opcoes_para_telefone %>
+    <%= f.input :mensagem, input_html: opcoes_para_observacao %>
+  
+      <%= f.submit 'Salvar' %>
+  <% end %>
+ </div>

@@ -1,6 +1,14 @@
 <div id="ladodireito">
-  <h2>Notícias</h2>
+  <h2>Consultar e Relatório Notícias</h2>
   <br>
+  
+  <div id='consulta'> 
+   <%= form_tag consultar_novidades_path, method: :get do %>
+     <%= label_tag :titulo, 'Título' %>
+     <%= text_field_tag :titulo %>
+     <%= submit_tag 'Buscar' %>
+   <% end %>
+  </div>
     
   <% @novidades.each do |novidade| %>
     <div id = "relatorionoticia">

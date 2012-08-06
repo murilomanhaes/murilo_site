@@ -3,23 +3,29 @@ MuriloSite::Application.routes.draw do
   resources :parceiros do 
     collection do 
       get :relatorio
+      get :consultar
     end
-  end
-    
+  end    
 
   resources :novidades do 
     collection do 
       get :relatorio
+      get :consultar
     end
   end
 
   devise_for :usuarios
 
-  root to: "home#index"   
+  root to: "home#index" 
+    
   resources :somos 
+  
   resources :computadores
+  
   resources :sites
+  
   resources :solucoes
+  
   resources :servicos
   
   resources :administracoes do 

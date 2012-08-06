@@ -683,7 +683,100 @@ a{
 
 
 
-/*Configurações para o formulário*/
+/*Configurações para o formulário contato*/
+
+#formulariocontato{
+	float: left;
+	width: 600px;
+	margin-bottom: 20px;
+	border-bottom:#C9B884 1px solid;
+}
+
+.conteinercontato{
+	width: 182px;
+	height: 100px;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 35px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+.topocontato{
+	width: 182px;
+	height: 50px;
+	float: left;
+	margin-bottom: 20px;
+	border-bottom:#C9B884 1px dashed;
+	
+}
+
+.topocontato img{
+	width: 50px;
+	height: 50px;
+	margin-top: -6px;
+	margin-left: 7px;	
+	float: left;
+}
+
+.topocontato strong{
+	text-align: center;
+}
+
+
+.conteinercontato2{
+	width: 590px;
+	height: 100px;
+	float: left;
+	border-top:#C9B884 1px solid;
+	margin-top: 0px;
+	margin-bottom: 60px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+.topocontato2{
+	width: 60px;
+	height: 50px;
+	float: left;
+	margin-left: 100px;
+	margin-bottom: 40px;
+	
+	
+}
+.topocontato2alter{
+	width: 60px;
+	height: 50px;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	
+	
+}
+
+.topocontato2 img{
+	width: 70px;
+	height: 70px;
+	margin-top: -6px;
+	margin-left: 7px;	
+	float: left;
+}
+
+.topocontato2alter img{
+	width: 70px;
+	height: 70px;
+	margin-top: -6px;
+	margin-left: 15px;	
+	float: left;
+}
+
+.topocontato2 strong{
+	text-align: center;
+}
+
+
+
+/*Configurações para formulario*/
 
 #formulario h2{ 
 	display:block; 
@@ -695,6 +788,15 @@ a{
 	height:29px; 
 	background-color:#FFF9F2;
 }
+
+#formulario strong{
+	font:14px/19px Arial, Helvetica, sans-serif; 
+	color:#4D371E; 
+	font-weight:normal; 
+	display:block;
+	margin:0 0 20px 10px; 
+}
+
 
 #formulario{
   float: left;

@@ -1,0 +1,29 @@
+<div id="ladodireito">
+<p>
+  <b>Nome:</b>
+  <%= @contato.nome %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @contato.email %>
+</p>
+
+<p>
+  <b>Telefone:</b>
+  <%= @contato.telefone %>
+</p>
+
+<p>
+  <b>Mensagem:</b>
+  <%= @contato.mensagem %>
+</p>
+
+<% if can? :manage, :all %>
+	  <li><a><%= link_to '', new_contato_path, :class => "voltar"%></a></li>
+	<% else %>
+	  <li><a><%= link_to '', root_path, :class => "voltar" %></a></li>
+	<% end %>
+
+</div>
+

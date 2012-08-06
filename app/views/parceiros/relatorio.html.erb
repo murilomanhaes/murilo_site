@@ -1,6 +1,14 @@
 <div id="ladodireito">
   <h2>Consultar e Relatório Parceiros</h2>
   <br>  
+  
+  <div id='consulta'> 
+   <%= form_tag consultar_parceiros_path, method: :get do %>
+     <%= label_tag :nome, 'Busca por nome' %>
+     <%= text_field_tag :nome %>
+     <%= submit_tag 'Buscar' %>
+   <% end %>
+  </div>
 
   <% @parceiros.each do |parceiro| %>
     <div id = "relatorioparceiro">

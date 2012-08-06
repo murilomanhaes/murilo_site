@@ -2,7 +2,7 @@
   <h2>Suportes Concluidos</h2><br>
   
   <div id='consulta'>
-   <%= form_tag consultar_concluidos_suportes_path, method: :get do %>
+   <%= form_tag consultar_concluidos_usuarios_path, method: :get do %>
      <%= label_tag :nome, 'Busca por nome' %>
      <%= text_field_tag :nome %>
      <%= submit_tag 'Buscar' %>

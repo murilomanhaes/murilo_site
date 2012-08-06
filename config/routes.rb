@@ -1,14 +1,18 @@
 MuriloSite::Application.routes.draw do
 
+  resources :contatos
+
   resources :parceiros do 
     collection do 
       get :relatorio
+      get :consultar
     end
   end    
 
   resources :novidades do 
     collection do 
       get :relatorio
+      get :consultar
     end
   end
 

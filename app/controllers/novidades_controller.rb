@@ -88,4 +88,10 @@ class NovidadesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def consultar
+    titulo = params[:titulo]
+    @novidades = Novidade.where('upper(titulo) like ?', "%#{titulo.upcase}%")
+    render 'relatorio'
+  end
 end

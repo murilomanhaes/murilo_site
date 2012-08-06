@@ -1,0 +1,60 @@
+<div id="formulario">
+  <div id="formulariocontato">
+    <h2>Contato</h2><br>
+
+    <strong>Preencha o formulário abaixo para entrar em contato com a Murilo A. Manhães.</strong>
+      
+      <br />
+
+      <%= render 'form' %>
+  </div>
+  
+    <div class="conteinercontato">
+			<div class="topocontato">
+				<img src="/assets/telefone.gif"/>
+				<strong><b> Atendimento <br>por Telefone</b></strong>
+			</div>
+			
+				<strong><b>Tel.:</b> (22) 9815-0155 
+				<b>Rádio:</b> (22) 7816-9769
+				<b>ID.:</b> 98*59700</strong> 
+		 </div>
+		 
+		 <div class="conteinercontato">
+			<div class="topocontato">
+				<img src="/assets/skype.gif"/>
+				<strong><b> Atendimento <br>por Skype</b></strong>
+			</div>
+			
+				<strong> <b>Skype:</b> murilomanhaes </strong> 
+		 </div> 
+		 
+		  <div class="conteinercontato">
+			<div class="topocontato">
+				<img src="/assets/horario.gif"/>
+				<strong><b> Horário de <br> atendimento</b></strong>
+			</div>
+			
+				<strong> <b>Dia:</b> Segunda à Sexta<br> <b>Horário:</b> 09:00h às 18:00h </strong> 
+		 </div> 
+		 
+		 
+		 
+		 <div class="conteinercontato2">
+			<div class="conteinercontato">
+			<div class="topocontato">
+				<img src="/assets/msn.gif"/>
+				<strong><b> Atendimento por <br> Messenger</b></strong>
+			</div>
+			
+				<strong> <b>MSN:</b> murilo_manhaes@hotmail.com </strong> 
+		 </div> 
+			
+			<div class="topocontato2">
+				<a href="http://www.facebook.com/profile.php?id=100002457636860" target="_blank"><img src="/assets/facebook.gif"/></a>
+			</div> 
+		
+		 </div> 
+ 
+  
+</div>

@@ -54,7 +54,7 @@
 					<li><%= link_to "Serviços", servicos_path %></li>
 					<li class="suporte">
 					  <% if can? :manage, :all %>
-					    <%= link_to "Suporte", adminsuporte_suporte_path %>
+					    <%= link_to "Suporte", adminsuporte_suportes_path %>
 					  <% else %>
 					    <%= link_to "Suporte", new_suporte_path %></li>
 					  <% end %>

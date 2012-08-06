@@ -89,4 +89,10 @@ class ParceirosController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+   def consultar
+    nome = params[:nome]
+    @parceiros = Parceiro.where('upper(nome) like ?', "%#{nome.upcase}%")
+    render 'relatorio'
+  end
 end

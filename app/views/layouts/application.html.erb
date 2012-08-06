@@ -27,7 +27,7 @@
 				  <li><%= link_to "Quem Somos",somos_path , :class=> "somos" %></li>
 				  <li><%= link_to "Computadores", computadores_path, :class => "computadores" %></li>
 				  <li><%= link_to "Sites", sites_path, :class => "sites" %></li>
-				  <li><a href="#" class="contato">Contato</a></li>
+				  <li><%= link_to "Contato", new_contato_path, :class => "contato"%></li>
 				  
 				  <% if usuario_signed_in? %>
 				  

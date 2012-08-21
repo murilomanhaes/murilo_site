@@ -13,6 +13,7 @@
         <%= f.input :sexo, as: :select, collection: ["Masculino", "Feminino"]%>
         <%= f.input :data_nascimento, label: "Data Nasc.", input_html: opcoes_para_data%>
         <%= f.input :telefone, input_html: opcoes_para_telefone%>
+                <%= f.input :tipo, as: :select, collection: ["Administrador", ""]%>
     </fieldset>
 
     <br><br>
@@ -39,9 +40,7 @@
         <%= f.input :password_confirmation, label: 'Senha Conf.' %>
     </fieldset>
     
-    <%= f.input :tipo%>
-    
-    
+     
     
 
     <br><br>

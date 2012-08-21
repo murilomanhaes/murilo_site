@@ -719,7 +719,7 @@ a{
 	float: left;
 }
 
-.topocontato p{
+.topocontato strong{
 	text-align: center;
 }
 
@@ -770,7 +770,7 @@ a{
 	float: left;
 }
 
-.topocontato2 p{
+.topocontato2 strong{
 	text-align: center;
 }
 
@@ -917,8 +917,9 @@ a{
 
 #menuadminitrador { 
   float: left;
-  width: 100%;
+  width: 860px;
   height: 200px;
+  background-color: red;
   margin-top: 45px;
 }
 

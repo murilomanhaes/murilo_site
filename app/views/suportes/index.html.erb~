@@ -9,7 +9,7 @@
       
       <% else %>
         <div class="linharealatoriosuporte">
-          <h2><%= link_to suporte.usuario.nome, usuario_path(suporte.usuario) %></h2>
+          <h2><%= link_to suporte.usuario.nome %></h2>
           <p class="datasuporte"><%= suporte.data.to_s_br %></p><br>
           
           <p><%= suporte.problema %></p>

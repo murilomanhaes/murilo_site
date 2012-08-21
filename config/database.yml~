@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: bd_development
+  database: murilo_site
   pool: 5
   username: postgres
   password: 27258754

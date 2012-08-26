@@ -1,5 +1,7 @@
 class ContatosController < ApplicationController
   
+  load_and_authorize_resource
+  
   def index
     @contatos = Contato.all
 

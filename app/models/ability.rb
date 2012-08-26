@@ -7,6 +7,7 @@ class Ability
     if user.tipo == "Administrador"
 		  can :manage, :all
 		else
+		  can [:create, :new, :show], Contato
       can [:create, :new, :show], Suporte
 	    can :show, :all 
 	  end

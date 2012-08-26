@@ -481,7 +481,7 @@ a{
 
 #noticias ul{
 	width:362px; 
-	margin:0 0 15px 0px; 
+	margin:10px 0 15px 0px; 
 	padding:0; 
 	display:block;
 	border-bottom:#C9B884 1px dashed; 
@@ -775,6 +775,24 @@ a{
 }
 
 
+.concluircontato{
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 130px;
+  background: url("/assets/admin/concluircontato.gif") no-repeat 0 0;
+ }
+ 
+ .concluidoscontato{
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 40px;
+  background: url("/assets/admin/concluidoscontato.gif") no-repeat 0 0;
+ }
+
+
+
 
 /*Configurações para formulario*/
 
@@ -917,10 +935,10 @@ a{
 
 #menuadminitrador { 
   float: left;
-  width: 860px;
+  width: 760px;
   height: 200px;
-  background-color: red;
   margin-top: 45px;
+  background-color: red;
 }
 
 .menucadastrar {
@@ -928,7 +946,7 @@ a{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/cadastrar.gif") no-repeat 0 0;
+  background: url("/assets/admin/cadastrar.gif") no-repeat 0 0;
  }
  
  .menualterar {
@@ -936,7 +954,7 @@ a{
   width: 170px;
   height: 100px;
   margin-left: 10px;
-  background: url("/assets/alterar.gif") no-repeat 0 0;
+  background: url("/assets/admin/alterar.gif") no-repeat 0 0;
  }
  
  .menuconsultar {
@@ -944,7 +962,7 @@ a{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/consulatarerelatorio.gif") no-repeat 0 0;
+  background: url("/assets/admin/consulatarerelatorio.gif") no-repeat 0 0;
  }
 
  
@@ -957,7 +975,7 @@ a{
   width: 170px;
   height: 100px;
   margin-left: 15px;
-  background: url("/assets/cadnoticia.gif") no-repeat 0 0;
+  background: url("/assets/admin/cadnoticia.gif") no-repeat 0 0;
  }
  
  .cadastrarparceiro {
@@ -965,23 +983,26 @@ a{
   width: 170px;
   height: 100px;
   margin-left: 15px;
-  background: url("/assets/cadparceiro.gif") no-repeat 0 0;
+  background: url("/assets/admin/cadparceiro.gif") no-repeat 0 0;
  }
+ 
+ 
+ 
  
  .cadastrarsuporte {
   float: left;
   width: 170px;
   height: 100px;
   margin-left: 15px;
-  background: url("/assets/cadsuporte.gif") no-repeat 0 0;
+  background: url("/assets/admin/cadsuporte.gif") no-repeat 0 0;
  }
- 
+  
  .concluirsuporte {
   float: left;
   width: 170px;
   height: 100px;
   margin-left: 15px;
-  background: url("/assets/concluirsuporte.gif") no-repeat 0 0;
+  background: url("/assets/admin/concluirsuporte.gif") no-repeat 0 0;
  }
  
  .concluidossuporte {
@@ -989,8 +1010,11 @@ a{
   width: 170px;
   height: 100px;
   margin-left: 15px;
-  background: url("/assets/concluidossuporte.gif") no-repeat 0 0;
+  background: url("/assets/admin/concluidossuporte.gif") no-repeat 0 0;
  }
+ 
+ 
+ 
  
  
  .alterarnoticia {
@@ -998,7 +1022,7 @@ a{
   width: 170px;
   height: 100px;
   margin-left: 15px;
-  background: url("/assets/alterarnoticia.gif") no-repeat 0 0;
+  background: url("/assets/admin/alterarnoticia.gif") no-repeat 0 0;
  }
  
  .alterarparceiro {
@@ -1006,7 +1030,7 @@ a{
   width: 170px;
   height: 100px;
   margin-left: 15px;
-  background: url("/assets/alterarparceiro.gif") no-repeat 0 0;
+  background: url("/assets/admin/alterarparceiro.gif") no-repeat 0 0;
  }
  
  
@@ -1015,7 +1039,7 @@ a{
   width: 170px;
   height: 100px;
   margin-left: 15px;
-  background: url("/assets/consultarnoticia.gif") no-repeat 0 0;
+  background: url("/assets/admin/consultarnoticia.gif") no-repeat 0 0;
  }
  
  .consultarparceiro {
@@ -1023,7 +1047,7 @@ a{
   width: 170px;
   height: 100px;
   margin-left: 15px;
-  background: url("/assets/consultarparceiro.gif") no-repeat 0 0;
+  background: url("/assets/admin/consultarparceiro.gif") no-repeat 0 0;
  }
  
  
